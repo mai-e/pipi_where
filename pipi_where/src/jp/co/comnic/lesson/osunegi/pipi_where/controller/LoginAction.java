@@ -29,7 +29,7 @@ public class LoginAction implements Action {
 
                 HttpSession session = request.getSession();
                 session.setAttribute("account", account);
-                forwardPath = "top.jsp";
+                forwardPath = "map_search.jsp";
                 return new Redirector(request, response, forwardPath);
                 
             } else {
