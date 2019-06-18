@@ -22,11 +22,19 @@
 	            <form class="col s12" action="login.do" method="post">
 	                <div class="row">
 	                	<div class="input-field col s6">
-	                    	<input id="card_name" name="cardName" type="text" class="validate"
-	                               placeholder="カード名を入力" autofocus> 
 	                        <label for="card_name">Cardname</label>
 	                    </div>
                 	</div>
+                	
+                	<select name="cardlist">
+                	<option value="linepay">LINEPay</option>
+                	<option value="rakutenedy">楽天Edy</option>
+                	<option value="paypay">PayPay</option>
+                	<option value="origamipay">origamiPay</option>
+                	<option value="suica">Suica</option>
+                	<option value="nanaco">nanaco</option>
+                	</select>
+                	
 					<input class="btn waves-effect #d7ccc8 brown lighten-4" type="submit" value="Search">
 					<p class="red-text darken-2">${error}</p>
 				</form>
