@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
   <display-name>pipi_where</display-name>
-<servlet>
+  
+  <context-param>
+    <param-name>/login.do</param-name>
+    <param-value>jp.co.comnic.lesson.osunegi.pipi_where.controller</param-value>
+  </context-param>
+  
+  <servlet>
     <servlet-name>map_search</servlet-name>
     <jsp-file>/map_search.jsp</jsp-file>
   </servlet>
