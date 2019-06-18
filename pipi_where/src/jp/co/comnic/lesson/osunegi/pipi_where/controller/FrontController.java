@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class FrontController
  */
-@WebServlet("/map_search")
+@WebServlet("*.do")
 public class FrontController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
