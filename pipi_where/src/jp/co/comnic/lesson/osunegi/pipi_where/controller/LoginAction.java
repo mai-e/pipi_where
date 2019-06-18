@@ -7,7 +7,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import jp.co.comnic.lesson.osunegi.pipi_where.beans.Account;
 import jp.co.comnic.lesson.osunegi.pipi_where.dao.DaoException;
+import jp.co.comnic.lesson.osunegi.pipi_where.model.LoginAuthenticator;
+
 
 public class LoginAction implements Action {
     
