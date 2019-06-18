@@ -1,11 +1,13 @@
 package jp.co.comnic.lesson.osunegi.pipi_where.beans;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 
 public class Account {
 
     private String userName;
     private String password;
+    private ArrayList<Card> cardList;
     private LocalDateTime lastLoginTime;
     private boolean isAuthenticated = false;
 
@@ -17,6 +19,14 @@ public class Account {
             this.userName = userName;
             this.password = password;
     }
+
+	public ArrayList<Card> getCardList() {
+		return cardList;
+	}
+
+	public void setCardList(ArrayList<Card> cardList) {
+		this.cardList = cardList;
+	}
 
 	public String getUserName() {
 		return userName;
