@@ -29,4 +29,12 @@
     <servlet-name>map_search</servlet-name>
     <url-pattern>/map_search</url-pattern>
   </servlet-mapping>
+    <servlet>
+    <servlet-name>card_list</servlet-name>
+    <jsp-file>/card_list.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>card_list</servlet-name>
+    <url-pattern>/card_list</url-pattern>
+  </servlet-mapping>
 </web-app>

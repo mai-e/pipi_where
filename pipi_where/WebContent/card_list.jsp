@@ -6,6 +6,6 @@
 			<title>カードの特徴を知る♪</title>
 		</head>
 	<body>
-		Hello, osuNEGI.
+		<h1>休憩</h1>
 	</body>
 	</html>
