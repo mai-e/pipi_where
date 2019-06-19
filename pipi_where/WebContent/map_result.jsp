@@ -21,7 +21,17 @@
 		</style>
 	</head>
 	<body>
+	
+		<c:forEach var="list" items="${usableStoreList}">
+			<div class="col s2">
+				<button class="btn waves-effect #d7ccc8 brown" type="submit">
+				${list}
+				</button>
+			</div>
+		</c:forEach>
+		
 		<div id="map"></div>
 		<script src="https://maps.googleapis.com/maps/api/js?key={APIKEY}&callback=initMap"></script>
+	
 	</body>
 </html>
