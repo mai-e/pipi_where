@@ -55,7 +55,7 @@
 					<input class="btn waves-effect #d7ccc8 brown lighten-4" type="submit" value="Search">
 					<p class="red-text darken-2">${error}</p>
 				</form>
-				<!-- <div><a href="card-list">まずはカードの特徴を知る♪</a></div> -->
+				<!-- <div><a href="card-list">まずはカードの特徴を知る</a></div> -->
 				<div id="map"></div>
 
 			</div>
