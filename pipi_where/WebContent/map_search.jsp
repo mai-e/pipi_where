@@ -49,9 +49,7 @@
 					<input class="btn waves-effect #d7ccc8 brown lighten-4" type="submit" value="Search">
 					<p class="red-text darken-2">${error}</p>
 				</form>
-				<c:forEach var="list" items="${usableStoreList}">
-				${list}
-				</c:forEach>
+
 				<div><a href="card_list">まずはカードの特徴を知る</a></div>
 
 			</div>
