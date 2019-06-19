@@ -26,6 +26,7 @@
 				</div>
 			</nav>
 			Hello, osuNEGI.
+			hello
 		</div>
 	</body>
 	</html>
