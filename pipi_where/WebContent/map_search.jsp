@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://sargue.net/jsptags/time" prefix="javatime"%>
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html>
 
 <html>
@@ -18,7 +19,7 @@
 		</script>
 	</head>
 	<body class="#efebe9 brown lighten-5 brown-text">
-	    <div class="container ">
+	    <div class="container">
 	    <nav>
 				<div class="nav-wrapper #a1887f brown lighten-2">
 					<a href="#" class="brand-logo">使える近くのお店を検索♪</a>
@@ -36,14 +37,13 @@
 	                    </div>
                 	</div>
                 	
-                	<select name="cardlist">
-                	<option value="linepay">LINEPay</option>
-                	<option value="rakutenedy">楽天Edy</option>
-                	<option value="paypay">PayPay</option>
-                	<option value="origamipay">origamiPay</option>
-                	<option value="suica">Suica</option>
-                	<option value="nanaco">nanaco</option>
-                	</select>
+                <select name="cardlist">
+                <c:forEach var="list" items="${account.cardList}">
+					<tr>
+						<td>${account.cardList}</td>
+					</tr>
+				</c:forEach>
+                </select>
                 	
 					<input class="btn waves-effect #d7ccc8 brown lighten-4" type="submit" value="Search">
 					<p class="red-text darken-2">${error}</p>

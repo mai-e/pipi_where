@@ -19,7 +19,7 @@ public class LoginAction implements Action {
     
         String userName = request.getParameter("userName");
         String password = request.getParameter("password");
-        String forwardPath = "login.jsp";
+        String forwardPath = "login";
 
         Account account;
         try {
