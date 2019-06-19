@@ -11,6 +11,11 @@
   	<param-name>/logout.do</param-name>
   	<param-value>jp.co.comnic.lesson.osunegi.pipi_where.controller.LogoutAction</param-value>
   </context-param>
+  
+    <context-param>
+  	<param-name>/search.do</param-name>
+  	<param-value>jp.co.comnic.lesson.osunegi.pipi_where.controller.SearchAction</param-value>
+  </context-param>
 
   <servlet>
     <servlet-name>login</servlet-name>
