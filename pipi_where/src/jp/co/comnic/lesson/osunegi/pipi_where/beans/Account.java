@@ -7,7 +7,7 @@ public class Account {
 
     private String userName;
     private String password;
-    private ArrayList<Card> cardList;
+    private ArrayList<Card> cardList = new ArrayList<Card>();
     private LocalDateTime lastLoginTime;
     private boolean isAuthenticated = false;
 
