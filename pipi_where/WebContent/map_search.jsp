@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://sargue.net/jsptags/time" prefix="javatime"%>
 
 <!DOCTYPE html>
 
@@ -18,6 +19,15 @@
 	</head>
 	<body class="#efebe9 brown lighten-5 brown-text">
 	    <div class="container ">
+	    <nav>
+				<div class="nav-wrapper #a1887f brown lighten-2">
+					<a href="#" class="brand-logo">使える近くのお店を検索♪</a>
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						<li>LastLoginTime: <javatime:format value="${account.lastLoginTime}" pattern="hh:mm:ss" /></li>
+						<li><a href="logout.do"><i class="material-icons">exit_to_app</i></a></li>
+					</ul>
+				</div>
+			</nav>
 	        <div class="row">
 	            <form class="col s12" action="login.do" method="post">
 	                <div class="row">

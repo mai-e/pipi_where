@@ -3,9 +3,19 @@ package jp.co.comnic.lesson.osunegi.pipi_where.beans;
 import java.util.ArrayList;
 
 public class Card {
-	String name;						// カード名
-	double rate;						// 還元率
-	ArrayList<String> usableStoreList;	// 使える店のリスト
+	private String name;						// カード名
+	private double rate;						// 還元率
+	private ArrayList<String> usableStoreList;	// 使える店のリスト
+	
+	public Card(String name) {
+		this.name = name;
+	}
+	
+	public Card(String name, ArrayList<String> usableStoreList) {
+		this.name = name;
+		this.usableStoreList = usableStoreList;
+	}
+	
 	public String getName() {
 		return name;
 	}

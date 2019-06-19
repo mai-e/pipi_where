@@ -23,6 +23,10 @@ public class Account {
 	public ArrayList<Card> getCardList() {
 		return cardList;
 	}
+	
+	public void addCard(Card card) {
+		cardList.add(card);
+	}
 
 	public void setCardList(ArrayList<Card> cardList) {
 		this.cardList = cardList;
