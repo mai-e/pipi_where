@@ -30,7 +30,7 @@
 	    <div class="container">
 	    <nav>
 				<div class="nav-wrapper #a1887f brown lighten-2">
-					<a href="#" class="brand-logo">使える近くのお店を検索♪</a>
+					<a href="#" class="brand-logo">&ensp;使える近くのお店を検索♪</a>
 					<ul id="nav-mobile" class="right hide-on-med-and-down">
 						<li>${account.userName}&emsp;</li>
 						<li>LastLoginTime: <javatime:format value="${account.lastLoginTime}" pattern="hh:mm:ss" /></li>
