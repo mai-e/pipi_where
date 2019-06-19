@@ -40,11 +40,9 @@
 	                    </div>
                 	</div>
                 	
-                <select name="cardlist">
+                <select id="cardlist">
                 <c:forEach var="list" items="${account.cardList}">
-					<tr>
-						<td>${account.cardList}</td>
-					</tr>
+					<option value="${list.name}">${list.name}</option>
 				</c:forEach>
                 </select>
                 	

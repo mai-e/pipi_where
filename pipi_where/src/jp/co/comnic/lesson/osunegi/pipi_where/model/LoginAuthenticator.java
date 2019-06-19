@@ -21,6 +21,7 @@ public class LoginAuthenticator {
         	list.add("ローソン");
         	list.add("ファミマ");
         	account.addCard(new Card("楽天Edy",list));
+        	account.addCard(new Card("LINEPay",list));
         }
         if (account.isAuthenticated()) 
         {
