@@ -13,6 +13,8 @@ import jp.co.comnic.lesson.osunegi.pipi_where.beans.Card;
 
 public class SearchAction implements Action {
 
+    String forwardPath = "map_result";
+
 	@Override
 	public Dispatcher execute(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -20,6 +22,8 @@ public class SearchAction implements Action {
 		String cardName = request.getParameter("cardList");
 		System.out.println(cardName);
 		HttpSession session = request.getSession();
+		forwardPath = "map_result";
+		
 		Account account = (Account) session.getAttribute("account");
 		ArrayList<String> usableStoreList = new ArrayList<String>();
 		for(Card card:account.getCardList()) {
@@ -31,6 +35,6 @@ public class SearchAction implements Action {
 		session.setAttribute("usableStoreList", usableStoreList);
 		
 		
-		 return new Forwarder(request, response, "map_search");
+		return new Redirector(request, response, forwardPath);
 	}
 }
