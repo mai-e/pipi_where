@@ -39,14 +39,14 @@
 				</div>
 			</nav>
 	        <div class="row">
-	            <form class="col s12" action="login.do" method="post">
+	            <form class="col s12" action="search.do" method="post">
 	                <div class="row">
 	                	<div class="input-field col s6">
 	                        <label for="card_name">Cardname</label>
 	                    </div>
                 	</div>
                 	
-                <select id="cardlist">
+                <select name="cardList">
                 <c:forEach var="list" items="${account.cardList}">
 					<option value="${list.name}">${list.name}</option>
 				</c:forEach>
@@ -55,6 +55,9 @@
 					<input class="btn waves-effect #d7ccc8 brown lighten-4" type="submit" value="Search">
 					<p class="red-text darken-2">${error}</p>
 				</form>
+				<c:forEach var="list" items="${usableStoreList}">
+				${list}
+				</c:forEach>
 				<div><a href="card_list">まずはカードの特徴を知る</a></div>
 				<div id="map"></div>
 
