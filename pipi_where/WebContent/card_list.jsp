@@ -25,8 +25,19 @@
 					</ul>
 				</div>
 			</nav>
-			Hello, osuNEGI.
-			hello
+			<br>
+			<div><a href="map_search">使えるお店を探す♪</a></div>
+			
+                <c:forEach var="list" items="${account.cardList}">
+                	<table>
+                	<tr>
+                		<td>
+                		${list.name}<br>
+                		<img src="img/${list.cardName}.jpg" width="65px" height="15%"><br>
+                		</td>
+                	</tr>
+                	</table>
+				</c:forEach>
 		</div>
 	</body>
 	</html>

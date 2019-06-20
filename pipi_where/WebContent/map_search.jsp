@@ -50,7 +50,7 @@
 					<p class="red-text darken-2">${error}</p>
 				</form>
 
-				<div><a href="card_list">まずはカードの特徴を知る</a></div>
+				<div><a href="card_list">まずはカードの特徴を知る♪</a></div>
 
 			</div>
 		</div>
