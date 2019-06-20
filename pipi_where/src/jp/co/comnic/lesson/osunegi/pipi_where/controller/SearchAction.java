@@ -1,6 +1,7 @@
 package jp.co.comnic.lesson.osunegi.pipi_where.controller;
 
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
 import javax.servlet.ServletException;
@@ -20,6 +21,12 @@ public class SearchAction implements Action {
 			throws ServletException, IOException {
 
 		String cardName = request.getParameter("cardList");
+		try {
+		      byte[] byteData = cardName.getBytes("ISO_8859_1");
+		      cardName = new String(byteData, "UTF-8");
+		    }catch(UnsupportedEncodingException e){
+		      System.out.println(e);
+		    }
 		System.out.println(cardName);
 		HttpSession session = request.getSession();
 		forwardPath = "map_result";
