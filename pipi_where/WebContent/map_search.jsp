@@ -53,7 +53,7 @@
 				<ul>
                 <c:forEach var="list" items="${usableStoreList}">
 					<li>
-					<a href="map_result">
+					<a href="map_result?name=${list}">
 					<button class="btn waves-effect #d7ccc8 brown" type="submit">
 						${list}
 					</button>
