@@ -25,6 +25,7 @@
 					</ul>
 				</div>
 			</nav>
+			
 			<br>
 			
 			<div><a href="map_search">使えるお店を探す♪</a></div>
