@@ -35,7 +35,7 @@
 		
 		
 		<div id="map"></div>
-		<script src="https://maps.googleapis.com/maps/api/js?key={APIKEY}&callback=initMap"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key={APIKEY}&libraries=places"></script>
 	</div>
 	</body>
 </html>
