@@ -14,7 +14,7 @@ import jp.co.comnic.lesson.osunegi.pipi_where.beans.Card;
 
 public class SearchAction implements Action {
 
-    String forwardPath = "map_result";
+    String forwardPath = "map_search";
 
 	@Override
 	public Dispatcher execute(HttpServletRequest request, HttpServletResponse response)
@@ -29,7 +29,7 @@ public class SearchAction implements Action {
 		    }
 		System.out.println(cardName);
 		HttpSession session = request.getSession();
-		forwardPath = "map_result";
+		forwardPath = "map_search";
 		
 		Account account = (Account) session.getAttribute("account");
 		ArrayList<String> usableStoreList = new ArrayList<String>();

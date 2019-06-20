@@ -26,6 +26,8 @@ public class LoginAuthenticator {
         	account.setAuthenticated(true);
         	account.addCard(new Card("楽天Edy", "RakutenEdy",list));
         	account.addCard(new Card("LINEPay", "linepay",list));
+        	list.add("モンテローザ");
+        	account.addCard(new Card("nanaco", "nanaco", list));
         }
         if (account.isAuthenticated()) 
         {
