@@ -22,11 +22,11 @@ public class LoginAuthenticator {
     	list2.add("ローソン");
     	if(account.getUserName().equals("John") && account.getPassword().equals("admin")){
         	account.setAuthenticated(true);
-        	account.addCard(new Card("楽天Edy", "RakutenEdy",list));
+        	account.addCard(new Card("楽天Edy", "rakutenedy",list));
         	account.addCard(new Card("LINEPay", "linepay",list));
         }else if(account.getUserName().equals("Guest")){
         	account.setAuthenticated(true);
-        	account.addCard(new Card("楽天Edy", "RakutenEdy",list2));
+        	account.addCard(new Card("楽天Edy", "rakutenedy",list2));
         	list.remove(1);
         	account.addCard(new Card("LINEPay", "linepay",list));
         	list.add("モンテローザ");
