@@ -45,20 +45,23 @@
 					<option value="${list.name}">${list.name}</option>
 				</c:forEach>
                 </select>
-                	
+                	<input class="btn waves-effect #d7ccc8 brown lighten-4" type="submit" value="Search">
+				</form>
+					<div><a href="card_list">まずはカードの特徴を知る♪</a></div>
+				<br>
+				<div class="col s2">
+				<ul>
                 <c:forEach var="list" items="${usableStoreList}">
-					<div class="col s2">
+					<li>
+					<a href="map_result">
 					<button class="btn waves-effect #d7ccc8 brown" type="submit">
 						${list}
 					</button>
-					</div>
+					</a>
+					</li>
 				</c:forEach>
-					<input class="btn waves-effect #d7ccc8 brown lighten-4" type="submit" value="Search">
-					<p class="red-text darken-2">${error}</p>
-				</form>
-
-				<div><a href="card_list">まずはカードの特徴を知る♪</a></div>
-
+					</ul>
+					</div>
 			</div>
 		</div>
 		
