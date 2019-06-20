@@ -33,7 +33,7 @@
                 	<tr>
                 		<td>
                 		${list.name}<br>
-                		<img src="img/${list.cardName}.jpg" width="65px" height="15%"><br>
+                		<img src="img/${list.cardName}.webp" width="120px" height="40%"><br>
                 		</td>
                 	</tr>
                 	</table>
