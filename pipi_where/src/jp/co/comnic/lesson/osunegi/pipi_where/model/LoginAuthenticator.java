@@ -15,16 +15,19 @@ public class LoginAuthenticator {
 //    	Account account = AccountDao.findBy(userName, password);
 //    	Account account = AccountDaoStub.findBy(userName, password);
         // 仮の分岐
+    	ArrayList<String> list = new ArrayList<String>();
+    	list.add("ローソン");
+    	list.add("ファミマ");
     	if(account.getUserName().equals("John") && account.getPassword().equals("admin")){
         	account.setAuthenticated(true);
-        	ArrayList<String> list = new ArrayList<String>();
-        	list.add("ローソン");
-        	list.add("ファミマ");
         	account.addCard(new Card("楽天Edy",list));
         	account.addCard(new Card("LINEPay",list));
         }else if(account.getUserName().equals("Guest")){
         	account.setAuthenticated(true);
-        	
+        	account.addCard(new Card("楽天Edy",list));
+        	account.addCard(new Card("LINEPay",list));
+        	list.add("モンテローザ");
+        	account.addCard(new Card("nanaco", list));
         }
         if (account.isAuthenticated()) 
         {
