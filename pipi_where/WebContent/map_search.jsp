@@ -46,6 +46,13 @@
 				</c:forEach>
                 </select>
                 	
+                <c:forEach var="list" items="${usableStoreList}">
+					<div class="col s2">
+					<button class="btn waves-effect #d7ccc8 brown" type="submit">
+						${list}
+					</button>
+					</div>
+				</c:forEach>
 					<input class="btn waves-effect #d7ccc8 brown lighten-4" type="submit" value="Search">
 					<p class="red-text darken-2">${error}</p>
 				</form>
