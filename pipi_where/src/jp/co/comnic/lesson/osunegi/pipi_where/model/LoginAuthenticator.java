@@ -22,6 +22,9 @@ public class LoginAuthenticator {
         	list.add("ファミマ");
         	account.addCard(new Card("楽天Edy",list));
         	account.addCard(new Card("LINEPay",list));
+        }else if(account.getUserName().equals("Guest")){
+        	account.setAuthenticated(true);
+        	
         }
         if (account.isAuthenticated()) 
         {

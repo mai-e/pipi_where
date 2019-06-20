@@ -31,6 +31,14 @@
 					<input class="btn waves-effect #d7ccc8 brown lighten-4" type="submit" value="Login">
 					<p class="red-text darken-2">${error}</p>
 				</form>
+				
+	            <form class="col s12" action="login.do" method="post">
+	            	<div>
+	            	<button class="btn waves-effect #d7ccc8 brown lighten-4" name="userName" value="Guest">
+	            	<span class="black-text text-darken-2">ゲストでログイン♪</span>
+	            	</button>
+	            	</div>
+	            </form>
 				<div>New member: <a href="sign-up">Sign-Up</a></div>
 			</div>
 		</div>
