@@ -36,7 +36,7 @@
 	</main>
 	
 	<div id="sub">
-		<h2>今までにない身軽さを！</h2>
+		<h2>今までにない身軽さを！!</h2>
 		<p><img src="img/atm.png" width="45" height="45" alt="ATM">
 		ATMに駆け込む必要がなくなります</p>
 		<p><img src="img/clock.png" width="45" height="45" alt="clock">
