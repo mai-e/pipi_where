@@ -4,28 +4,26 @@
 		<head>
 			<meta charset="UTF-8">
 			<title>OSUNEGI CARDMAP</title>
-			<link rel="stylesheet" href="css/style.css">
+    		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 		</head>
-	<body>
-	
-	<div id="page">
+	<body class="#34314c navy lighten-5 navy-text">
+	<div class="container">
 
 	<header>
 			<img src="img/logo.png" alt="OSUNEGI CARDMAP"
 			width="60" height="60">
-			<img src="img/logotext.png" alt="OSUNEGI CARDMAP"
-			width="500" height="60">
 			
 		<nav>
 			<ul>
-		 		<li id="current"><a href="top">ホーム</a></li>
-				<li><a href="login">ログイン</a></li>
-			 	<li><a href="map_search">カードからお店を検索</a></li>
-		 		<li><a href="card_list">カードを選ぶ</a></li>
+		 		<li><a class="waves-effect waves-light btn-small" href="top">ホーム</a></li>
+				<li><a class="waves-effect waves-light btn-small" href="login">ログイン</a></li>
+			 	<li><a class="waves-effect waves-light btn-small" href="map_search">カードからお店を検索</a></li>
+		 		<li><a class="waves-effect waves-light btn-small" href="card_list">カードを選ぶ</a></li>
 			</ul>
 		</nav>
 		
-	<img src="" alt="" width="900" height="350">
+	<img src="img/image.webp" alt="" width="700" height="450">
 	</header>
 	
 	<main>
@@ -59,7 +57,7 @@
 		</section>
 	</aside>
 	</div>
-	ｓ
+	
 	<footer>
 			<small>Copyright &copy; OSUNEGI CARDMAP. All rights reserved.</small>
 	</footer>

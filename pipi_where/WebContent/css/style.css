@@ -69,10 +69,10 @@ nav ul {
 	overflow: hidden;
 	margin: 0 0 10px 0;
 	padding: 0;
-	border: 1px solid #ffc952;
+	border: 1px solid #f5e4c3;
 	border-radius: 7px;
 	line-height: 1.0;
-	background: #ffc952;
+	background: #f5e4c3;
 }
 
 nav li, nav a {
@@ -81,16 +81,15 @@ nav li, nav a {
 
 nav li {
 	float: left;
-	border-right: 1px solid #ffc952;
+	border-right: 1px solid #f5e4c3;
 	color: #f59aa3;
-	background: #ffc952;
+	background: #f5e4c3;
 }
 
 nav a {
 	padding: 15px 25px;
 	font-weight: bold;
 	text-decoration: none;
-	text-shadow: 1px 1px 0 #34a7b2;
 }
 
 nav a:hover {
