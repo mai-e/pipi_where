@@ -4,7 +4,7 @@
 		<head>
 			<meta charset="UTF-8">
 			<title>OSUNEGI CARDMAP</title>
-			<link rel="stylesheet" href="style.css">
+			<link rel="stylesheet" href="css/style.css">
 		</head>
 	<body>
 	
@@ -24,29 +24,37 @@
 			</ul>
 		</nav>
 		
-	<img src="メイン画像を入れる" alt="" width="900" height="350">
+	<img src="" alt="" width="900" height="350">
 	</header>
-	
-	<main>
+
 		<section>
 			<h1>"キャッシュレス時代"の到来</h1>
 			<p>テキストを入力テキストを入力テキストを入力テキストを入力テキストを入浴</p>
 			<p>テキストを入力２テキストを入力２テキストを入力２テキストを入力２</p>
 		</section>
-	</main>
 	
 	<div id="sub">
-		<h2>今までにない身軽さを！!</h2>
-		<p><img src="img/atm.png" width="45" height="45" alt="ATM">
-		ATMに駆け込む必要がなくなります</p>
-		<p><img src="img/clock.png" width="45" height="45" alt="clock">
-		お財布をしまう時間も必要なくなります</p>
-		<p><img src="img/card.png" width="45" height="45" alt="CARD">
-		カードまたはスマートフォンをかざすだけ</p>
+	<aside>
+	 	<section>
+			<h2>今までにない身軽さを！</h2>
+			<p><img src="img/atm.png" width="45" height="45" alt="ATM">
+			ATMに駆け込む必要がなくなります</p>
+		</section>
+		<section>
+			<p><img src="img/clock.png" width="45" height="45" alt="clock">
+			お財布をしまう時間も必要なくなります</p>
+		</section>
+		<section>
+			<p><img src="img/card.png" width="45" height="45" alt="CARD">
+			カードまたはスマートフォンをかざすだけ</p>
+		</section>
+	</aside>
 	</div>
 	
 	<footer>
-		<p>Copyright &copy; OSUNEGI CARDMAP. All rights reserved.</p>
+		<p>
+			<small>Copyright &copy; OSUNEGI CARDMAP. All rights reserved.</small>
+		</p>
 	</footer>
 		
 	</div>
