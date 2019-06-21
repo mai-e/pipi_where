@@ -11,12 +11,12 @@
 	<div id="page">
 
 	<header>
-	<img src="img/logo.png" alt="OSUNEGI CARDMAP"
+	<img id="logo" src="img/logo.png" alt="OSUNEGI CARDMAP"
 	width="60" height="60">
 		
 		<nav>
 			<ul>
-		 		<li><a href="top">ホーム</a></li>
+		 		<li id="current"><a href="top">ホーム</a></li>
 				<li><a href="#">会社概要</a></li>
 				<li><a href="login">ログイン</a></li>
 			 	<li><a href="map_search">カードからお店を検索</a></li>
@@ -26,12 +26,14 @@
 		
 	<img src="" alt="" width="900" height="350">
 	</header>
-
+	
+	<main>
 		<section>
 			<h1>"キャッシュレス時代"の到来</h1>
 			<p>テキストを入力テキストを入力テキストを入力テキストを入力テキストを入浴</p>
 			<p>テキストを入力２テキストを入力２テキストを入力２テキストを入力２</p>
 		</section>
+	</main>
 	
 	<div id="sub">
 	<aside>
