@@ -31,6 +31,9 @@ public class AccountDao {
 					if (rs.next()) {
 						account.setUserName(rs.getString("user_name"));
 						account.setAuthenticated(true);
+						if(account.getUserName().equals("Guest")){
+							
+						}
 					}
 				}
 			} catch (NamingException | SQLException e) {
