@@ -11,9 +11,9 @@ import javax.naming.NamingException;
 public class UsableStoreDao {
 
 	public static ArrayList<String> findBy(String name) throws DaoException{
-		String sql = "SELECT card.card_name, store.store_jpn FROM card, usable_store, store"
-				+"WHERE card.card_name = usable_store.card_name AND usable_store.store_id = store.store_id"
-				+"AND card.card_name = ?";
+		String sql = "SELECT c.card_name, s.store_jpn FROM card c, usable_store u, store s"
+				+" WHERE c.card_name = u.card_name AND u.store_id = s.store_id"
+				+" AND c.card_name = ?";
 		ArrayList<String> usableStoreList = new ArrayList<String>();
 		try (Connection conn = ConnectionFactory.getConnection();
 				 PreparedStatement pstmt = conn.prepareStatement(sql)) {

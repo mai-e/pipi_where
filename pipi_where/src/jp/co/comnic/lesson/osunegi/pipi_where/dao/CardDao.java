@@ -18,15 +18,23 @@ public class CardDao {
 		try (Connection conn = ConnectionFactory.getConnection();
 				 PreparedStatement pstmt = conn.prepareStatement(sql)) {
 				
-				
+			String name;
+			String cardName;
+			double rate;
+			ArrayList<String> usableStoreList;
+			
 				try (ResultSet rs = pstmt.executeQuery()) {
 					while (rs.next()) {
-						
+						name = rs.getString("card_name");
+						cardName = rs.getString("card_name_wep");
+						rate = rs.getDouble("rate_max");
+						usableStoreList = UsableStoreDao.findBy(name);
+						cardList.add(new Card(name, cardName, rate, usableStoreList));
 					}
 				}
 			} catch (NamingException | SQLException e) {
 				throw new DaoException(e);
 			}
-		return null;
+		return cardList;
 	}
 }

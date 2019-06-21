@@ -8,9 +8,11 @@ import java.util.ArrayList;
 
 import javax.naming.NamingException;
 
+import jp.co.comnic.lesson.osunegi.pipi_where.beans.Card;
+
 public class UsableCardDao {
 
-	public static void findAll() throws DaoException {
+	public static ArrayList<Card> findBy(String name) throws DaoException {
 		String sql = "SELECT * FROM usable_card";
 		try (Connection conn = ConnectionFactory.getConnection();
 				 PreparedStatement pstmt = conn.prepareStatement(sql)) {
@@ -23,5 +25,6 @@ public class UsableCardDao {
 			} catch (NamingException | SQLException e) {
 				throw new DaoException(e);
 			}
+		return null;
 	}
 }

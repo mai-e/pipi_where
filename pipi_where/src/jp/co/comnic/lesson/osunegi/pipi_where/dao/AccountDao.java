@@ -32,6 +32,8 @@ public class AccountDao {
 						account.setUserName(rs.getString("user_name"));
 						account.setAuthenticated(true);
 						if(account.getUserName().equals("Guest")){
+							account.setCardList(CardDao.findAll());
+						}else {
 							
 						}
 					}

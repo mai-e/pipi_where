@@ -22,6 +22,13 @@ public class Card {
 		this.usableStoreList = usableStoreList;
 	}
 	
+	public Card(String name, String cardName, double rate, ArrayList<String> usableStoreList) {
+		this.name = name;
+		this.cardName = cardName;
+		this.rate = rate;
+		this.usableStoreList = usableStoreList;
+	}
+
 	public String getName() {
 		return name;
 	}
