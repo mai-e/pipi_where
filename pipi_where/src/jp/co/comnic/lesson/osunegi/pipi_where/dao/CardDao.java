@@ -21,6 +21,7 @@ public class CardDao {
 				
 				try (ResultSet rs = pstmt.executeQuery()) {
 					while (rs.next()) {
+						
 					}
 				}
 			} catch (NamingException | SQLException e) {
