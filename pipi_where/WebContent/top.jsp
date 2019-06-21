@@ -39,24 +39,28 @@
 	<aside>
 	 	<section>
 			<h2>今までにない身軽さを！</h2>
-			<p><img src="img/atm.png" width="45" height="45" alt="ATM">
-			ATMに駆け込む必要がなくなります</p>
+		</section>
+		
+		<section>
+			<img src="img/atm.png" width="45" height="45" alt="ATM">
+			<p>ATMに<br>
+			駆け込む必要がなくなります</p>
 		</section>
 		<section>
-			<p><img src="img/clock.png" width="45" height="45" alt="clock">
-			お財布をしまう時間も必要なくなります</p>
+			<img src="img/clock.png" width="45" height="45" alt="clock">
+			<p>お財布をしまう時間も<br>
+			必要なくなります</p>
 		</section>
 		<section>
-			<p><img src="img/card.png" width="45" height="45" alt="CARD">
-			カードまたはスマートフォンをかざすだけ</p>
+			<img src="img/card.png" width="45" height="45" alt="CARD">
+			<p>カードまたは<br>
+			スマートフォンをかざすだけ</p>
 		</section>
 	</aside>
 	</div>
-	
+	ｓ
 	<footer>
-		<p>
 			<small>Copyright &copy; OSUNEGI CARDMAP. All rights reserved.</small>
-		</p>
 	</footer>
 		
 	</div>
