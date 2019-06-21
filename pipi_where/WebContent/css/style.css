@@ -5,23 +5,20 @@ section, article, aside, nav, header, main, footer {
 }
 
 header img {
-	display: block;
+	display: inline-block;
 }
 
-#logo {
-	margin: 20px 0;
-}
 
 body {
 	margin: 0;
 	padding: 0;
 	font-size: small;
 	color: #333;
-	background: white;
+	background: #FFFFFF;
 }
 
 h1,h2 {
-	color: #222;	
+	color: #34314c;	
 }
 
 h1 {
@@ -38,11 +35,11 @@ p {
 }
 
 a:link, a:visited {
-	color: #37c;
+	color: #34314c;
 }
 
 a:hover {
-	color: #999;
+	color: #47b8e0;
 }
 
 #page {
@@ -72,11 +69,10 @@ nav ul {
 	overflow: hidden;
 	margin: 0 0 10px 0;
 	padding: 0;
-	border: 1px solid red;
+	border: 1px solid #ffc952;
 	border-radius: 7px;
-	box-shadow:
-	 inset 1px 1px 0 gray, 1px 1px 3px rgba(0, 0, 0, 0.1);
 	line-height: 1.0;
+	background: #ffc952;
 }
 
 nav li, nav a {
@@ -85,14 +81,16 @@ nav li, nav a {
 
 nav li {
 	float: left;
-	border-right: 1px solid green;
+	border-right: 1px solid #ffc952;
+	color: #f59aa3;
+	background: #ffc952;
 }
 
 nav a {
 	padding: 15px 25px;
 	font-weight: bold;
 	text-decoration: none;
-	text-shadow: 1px 1px 0 pink;
+	text-shadow: 1px 1px 0 #34a7b2;
 }
 
 nav a:hover {
@@ -101,16 +99,15 @@ nav a:hover {
 }
 
 nav #current a {
-	color: green;
-	background: white;
+
 }
 
 #sub aside {
 	margin: 20px 40px 20px 20px;
 	padding: 15px;
-	border: 1px solid red;
+	border: 1px solid #f5e4c3;
 	border-radius: 7px;
-	background-color: #f5f5f5;
+	background-color: #f5e4c3;
 	box-shadow:
 	inset 1px 1px 0 white,
 	1px 1px 3px rgba(0, 0, 0, 0.1);

@@ -11,13 +11,14 @@
 	<div id="page">
 
 	<header>
-	<img id="logo" src="img/logo.png" alt="OSUNEGI CARDMAP"
-	width="60" height="60">
-		
+			<img src="img/logo.png" alt="OSUNEGI CARDMAP"
+			width="60" height="60">
+			<img src="img/logotext.png" alt="OSUNEGI CARDMAP"
+			width="500" height="60">
+			
 		<nav>
 			<ul>
 		 		<li id="current"><a href="top">ホーム</a></li>
-				<li><a href="#">会社概要</a></li>
 				<li><a href="login">ログイン</a></li>
 			 	<li><a href="map_search">カードからお店を検索</a></li>
 		 		<li><a href="card_list">カードを選ぶ</a></li>

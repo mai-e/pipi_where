@@ -18,6 +18,15 @@
   </context-param>
 
   <servlet>
+    <servlet-name>top</servlet-name>
+    <jsp-file>/top.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>top</servlet-name>
+    <url-pattern>/top</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
     <servlet-name>login</servlet-name>
     <jsp-file>/login.jsp</jsp-file>
   </servlet>
