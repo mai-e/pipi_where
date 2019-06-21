@@ -1,8 +1,8 @@
 <Context>
-   <Resource name="ds/mariadb/test" 
+   <Resource name="ds/mariadb/pipi_where" 
              type="javax.sql.DataSource"
              driverClassName="org.mariadb.jdbc.Driver"
-             url="jdbc:mariadb://localhost/test"
+             url="jdbc:mariadb://localhost/pipi_where"
              username="root"
              password="mariadb"
    />
