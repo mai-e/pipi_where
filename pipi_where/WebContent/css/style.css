@@ -1,1 +1,105 @@
 @charset "UTF-8";
+
+section, article, aside, nav, header, main, footer {
+	display: block;
+}
+
+header img {
+	display: block;
+}
+
+#logo {
+	margin: 20px 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: small;
+	color: #333;
+	background: white;
+}
+
+h1,h2 {
+	color: #222;	
+}
+
+h1 {
+	font-size: x-large;
+}
+h2 {
+	font-size: medium;
+}
+
+p {
+	line-height:1.7;	
+}
+
+a:link, a:visited {
+	color: #37c;
+}
+
+a:hover {
+	color: #999;
+}
+
+#page {
+	margin: 0 auto;
+	width: 900 px;
+}
+
+main {
+	float: left;
+	width: 450px;
+}
+
+#sub {
+	float: right;
+	width: 450px;
+}
+
+footer {
+	clear: both;
+}
+
+#copyright {
+	clear: both;
+}
+
+nav ul {
+	overflow: hidden;
+	margin: 0 0 10px 0;
+	padding: 0;
+	border: 1px solid red;
+	border-radius: 7px;
+	box-shadow:
+	 inset 1px 1px 0 gray, 1px 1px 3px rgba(0, 0, 0, 0.1);
+	line-height: 1.0;
+}
+
+nav li, nav a {
+	display: block;
+}
+
+nav li {
+	float: left;
+	border-right: 1px solid green;
+}
+
+nav a {
+	padding: 15px 25px;
+	font-weight: bold;
+	text-decoration: none;
+	text-shadow: 1px 1px 0 pink;
+}
+
+nav a:hover {
+	background :
+	repeat-x bottom;
+}
+
+nav #current a {
+	color: green;
+	background: white;
+}
+
