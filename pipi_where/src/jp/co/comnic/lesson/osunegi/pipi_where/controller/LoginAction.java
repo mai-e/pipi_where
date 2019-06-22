@@ -26,7 +26,6 @@ public class LoginAction implements Action {
             account = LoginAuthenticator.authenticate(userName, password);
                                     
             if (account.isAuthenticated()) {
-
                 HttpSession session = request.getSession();
                 session.setAttribute("account", account);
                 forwardPath = "map_search.jsp";

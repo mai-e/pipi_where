@@ -18,7 +18,7 @@ public class UsableStoreDao {
 		try (Connection conn = ConnectionFactory.getConnection();
 				 PreparedStatement pstmt = conn.prepareStatement(sql)) {
 				pstmt.setString(1, name);
-				
+
 				try (ResultSet rs = pstmt.executeQuery()) {
 					while (rs.next()) {
 						usableStoreList.add(rs.getString("store_jpn"));

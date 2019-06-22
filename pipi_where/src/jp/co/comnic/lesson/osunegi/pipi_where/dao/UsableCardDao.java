@@ -12,19 +12,31 @@ import jp.co.comnic.lesson.osunegi.pipi_where.beans.Card;
 
 public class UsableCardDao {
 
-	public static ArrayList<Card> findBy(String name) throws DaoException {
-		String sql = "SELECT * FROM usable_card";
+	public static ArrayList<Card> findBy(String userName) throws DaoException {
+		String sql = "SELECT u.user_name, c.* FROM usable_card u, card c"
+				+ " WHERE u.card_id = c.card_id"
+				+ " AND u.user_name = ?";
+
+		ArrayList <Card> cardList = new ArrayList<Card>();
 		try (Connection conn = ConnectionFactory.getConnection();
 				 PreparedStatement pstmt = conn.prepareStatement(sql)) {
-				
-				
+			pstmt.setString(1, userName);
+			String name;
+			String cardName;
+			double rate;
+			ArrayList<String> usableStoreList;
 				try (ResultSet rs = pstmt.executeQuery()) {
 					while (rs.next()) {
+						name = rs.getString("card_name");
+						cardName = rs.getString("card_name_wep");
+						rate = rs.getDouble("rate_max");
+						usableStoreList = UsableStoreDao.findBy(name);
+						cardList.add(new Card(name, cardName, rate, usableStoreList));
 					}
 				}
 			} catch (NamingException | SQLException e) {
 				throw new DaoException(e);
 			}
-		return null;
+		return cardList;
 	}
 }
