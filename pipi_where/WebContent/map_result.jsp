@@ -7,7 +7,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>検索結果だお♪</title>
+		<title>キャッシュレス決済可能な店舗一覧</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -20,20 +20,35 @@
 		}
 		</style>
 	</head>
-	<body class="#efebe9 brown lighten-5 brown-text">
-	    <div class="container">
-	    <nav>
-				<div class="nav-wrapper #a1887f brown lighten-2">
-					<a href="#" class="brand-logo">&ensp;使える近くのお店を検索♪</a>
-					<ul id="nav-mobile" class="right hide-on-med-and-down">
-						<li>${account.userName}&emsp;</li>
-						<li>LastLoginTime: <javatime:format value="${account.lastLoginTime}" pattern="hh:mm:ss" /></li>
-						<li><a href="logout.do"><i class="material-icons">exit_to_app</i></a></li>
-					</ul>
-				</div>
-			</nav>
-		
-		
+
+	<body class="#ffffff white indigo-text text-lighten-3">
+	<div class="container">
+	<header>
+	<br>
+
+	<nav>
+		<div class="nav-wrapper #7986cb indigo lighten-2">
+		<a href="#" class="brand-logo">&ensp;キャッシュレス決済可能な店舗を探す</a>
+		<ul id="nav-mobile" class="right hide-on-med-and-down">
+			<li>${account.userName}&emsp;</li>
+			<li>LastLoginTime: <javatime:format value="${account.lastLoginTime}" pattern="hh:mm:ss" /></li>
+			<li><a href="logout.do"><i class="material-icons">exit_to_app</i></a></li>
+		</ul>
+		</div>
+	</nav>
+
+	<div class="row">
+
+	<div class="col s10">
+			<a class="#7986cb indigo lighten-2 waves-effect waves-light  btn-small" href="top">ホーム</a>
+			<a class="#7986cb indigo lighten-2 waves-effect waves-light btn-small" href="login">ログイン</a>
+		 	<a class="#ffca28 amber lighten-1  grey-text text-darken-4 waves-effect waves-light btn-small" href="map_search">カードからお店を検索</a>
+		 	<a class="#7986cb indigo lighten-2 waves-effect waves-light btn-small" href="card_list">カードを選ぶ</a>
+	</div>
+	</div>
+
+	</header>
+
 		<div id="map"></div>
 		<script src="https://maps.googleapis.com/maps/api/js?key=api&callback=initMap&libraries=places"></script>
 	</div>
