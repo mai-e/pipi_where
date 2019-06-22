@@ -13,7 +13,7 @@ public class AccountDao {
 	public static Account findBy(String userName) throws DaoException{
 		return findBy(userName, null);
 	}
-	
+
 	public static Account findBy(String userName, String password)throws DaoException{
 		Account account = new Account();
 		String sql = "SELECT * FROM account WHERE user_name = ? ";
@@ -22,7 +22,7 @@ public class AccountDao {
 		}
 		try (Connection conn = ConnectionFactory.getConnection();
 				 PreparedStatement pstmt = conn.prepareStatement(sql)) {
-				
+
 				pstmt.setString(1, userName);
 				if (password != null) {
 					pstmt.setString(2, password);
@@ -34,7 +34,7 @@ public class AccountDao {
 						if(account.getUserName().equals("Guest")){
 							account.setCardList(CardDao.findAll());
 						}else {
-							
+							account.setCardList(UsableCardDao.findBy(account.getUserName()));
 						}
 					}
 				}
