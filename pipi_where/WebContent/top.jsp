@@ -53,7 +53,9 @@
 		</nav>
 
 	<img src="img/image.webp" alt="" width="700" height="450">
+
 	</header>
+
 
 	</div>
 
