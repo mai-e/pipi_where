@@ -17,7 +17,6 @@
 	<div class="row">
 
 	<header>
-<<<<<<< HEAD
 	<br>
 	<nav>
 		<div class="nav-wrapper #7986cb indigo lighten-2">
@@ -41,7 +40,6 @@
 	</div>
 	</div>
 
-=======
 			<img src="img/logo.png" alt="OSUNEGI CARDMAP"
 			width="60" height="60">
 
@@ -55,24 +53,17 @@
 		</nav>
 
 	<img src="img/image.webp" alt="" width="700" height="450">
->>>>>>> branch 'master' of https://github.com/mai-e/pipi_where.git
 	</header>
 
-<<<<<<< HEAD
 	</div>
 
-=======
 	<main>
->>>>>>> branch 'master' of https://github.com/mai-e/pipi_where.git
 		<section>
 			<h1>"キャッシュレス時代"の到来</h1>
 			<p>テキストを入力テキストを入力テキストを入力テキストを入力テキストを入浴</p>
 			<p>テキストを入力２テキストを入力２テキストを入力２テキストを入力２</p>
 		</section>
-<<<<<<< HEAD
-=======
 	</main>
->>>>>>> branch 'master' of https://github.com/mai-e/pipi_where.git
 
 	<div id="sub">
 	<aside>
