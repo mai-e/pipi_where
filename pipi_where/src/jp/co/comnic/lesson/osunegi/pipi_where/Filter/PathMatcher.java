@@ -9,7 +9,6 @@ public class PathMatcher {
 			path.matches("/top") ||
 			path.matches("/card_list.*") ||
 		    path.endsWith(".*(.css)|(.js)|(.gif)|(.png)|(.jpg)|(.webp)")) {
-			
 			return true;
 		}
 		

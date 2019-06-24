@@ -20,6 +20,7 @@
 	<header>
 	<br>
 	<nav>
+	<img src="img/logo.png" alt="logo">
 		<div class="nav-wrapper #7986cb indigo lighten-2">
 		<a href="#" class="brand-logo">&ensp;おすネギ的カードマップ</a>
 		<c:if test="${account!=null}">
@@ -46,7 +47,27 @@
 	</div>
 	</header>
 	</div>  
-
+	
+	<div class="card small">
+		<div class="row">
+    	<div class="col s12 m7">
+     	<div class="card">
+        <div class="card-image">
+          <img src="images/sample-1.jpg">
+          <span class="card-title">Card Title</span>
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+  	</div>
+  	</div>
+  
 			<h5>今までにない身軽さを！</h5>
 
 			<img src="img/atm.png" width="45" height="45" alt="ATM">
@@ -61,9 +82,9 @@
 			
 			<img src="img/card.png" width="45" height="45" alt="CARD">
 			カードまたは<br>
-			スマートフォンをかざすだけ!
+			スマートフォンをかざすだけ
 			<br>
-
+			
 
 		<footer>
 			<small>Copyright &copy; OSUNEGI CARDMAP. All rights reserved.</small>
