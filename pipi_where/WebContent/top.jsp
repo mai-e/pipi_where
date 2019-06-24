@@ -49,43 +49,65 @@
  
 	
 	<div class="row">
-    	<div class="col s6 m6">
+    	<div class="col s7 m6">
      	<div class="card">
         <div class="card-image">
           <img src="img/inbag.png">
-          <span class="card-title">Card Title</span>
+          <span class="card-title">身軽に出かけよう</span>
         </div>
         <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          <p>
+			<span class="fs7">いま、世間ではミニマリストなるものが流行っている。しかし、現代のITがこのまま進化していくならば、全員がミニマリストになるだろう。
+			財布も鞄もいらない。身体ひとつで出かけられる楽しみをささやかに。まずは、キャッシュレス決済から始めよう。
+			</span>
+          </p>
         </div>
         <div class="card-action">
-          <a href="#">This is a link</a>
+          <a href="https://meti-journal.jp/policy/201810/">経済産業省「キャッシュレス決済が日本を変える」</a>
         </div>
       </div>
     </div>
 
+	<div class="row">
+    	<div class="col s7 m6">
+     	<div class="card">
+        <div class="card-content">
+          <p>
+			<span class="fs7">いま、世間ではミニマリストなるものが流行っている。しかし、現代のITがこのまま進化していくならば、全員がミニマリストになるだろう。
+			財布も鞄もいらない。身体ひとつで出かけられる楽しみをささやかに。まずは、キャッシュレス決済から始めよう。
+			</span>
+          </p>
+        </div>
+        <div class="card-action">
+          <a href="https://meti-journal.jp/policy/201810/">経済産業省「キャッシュレス決済が日本を変える」</a>
+        </div>
+        <div class="card-image">
+          <img src="img/inbag.png">
+          <span class="card-title">身軽に出かけよう</span>
+        </div>
+      </div>
+    </div>
+    
 		<div class="col s6 m6">
-		<div class="card-panel #00796b teal darken-2 teal">
-		<span class="white-text">
-			<img src="img/atm.png" width="45" height="45" alt="ATM">
-			　　ATMに<br>
-			　　　　　　　駆け込む必要がなくなります
+		<div class="card-panel #efebe9 brown lighten-5 teal">
+		<span class="grey-text text-darken-3">
+  
+			<img src="img/atm.png" width="45" height="45" alt="atm">
+    		ATMに駆け込むことがなくなります。
 			<br>
 			
 			<img src="img/clock.png" width="45" height="45" alt="clock">
-			　　お財布をしまう時間も<br>
-			　　　　　　　必要なくなります
+			鞄のなかから財布をさがしだす必要も、
 			<br>
 			
 			<img src="img/card.png" width="45" height="45" alt="CARD">
-			　　カードまたは<br>
-			　　　　　　　スマートフォンをかざすだけ
+			カードや携帯ひとつで事足ります。
 			<br>
-			
+		
 		</span>
 		</div>
 		</div>
+		
 	</div>
 
 		<footer>
