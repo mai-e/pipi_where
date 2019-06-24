@@ -40,20 +40,6 @@
 	</div>
 	</div>
 
-			<img src="img/logo.png" alt="OSUNEGI CARDMAP"
-			width="60" height="60">
-
-		<nav class=	"N/A transparent">
-			<ul>
-		 		<li><a class="#3f51b5 indigo waves-effect waves-light  btn-small" href="top">ホーム</a></li>
-				<li><a class="waves-effect waves-light btn-small" href="login">ログイン</a></li>
-			 	<li><a class="waves-effect waves-light btn-small" href="map_search">カードからお店を検索</a></li>
-		 		<li><a class="waves-effect waves-light btn-small" href="card_list">カードを選ぶ</a></li>
-			</ul>
-		</nav>
-
-	<img src="img/image.webp" alt="" width="700" height="450">
-
 	</header>
 
 
