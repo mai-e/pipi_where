@@ -34,8 +34,25 @@
 	</nav>
 	</header>
 	
-	カードを追加
-	
+<form action="ｒegister.do" method="post">
+	<c:forEach var="list" items="${cardList}">
+		<c:forEach var="card" items="${account.cardList}">
+		 <c:if test="${list.name == card.name }" var="flg">
+		 	<c:set var="checked" value="checked='checked' disabled='disabled'"/>
+		 </c:if>
+   		</c:forEach>
+		 <p>
+	      <label>
+	        <input type="checkbox" class="filled-in"name="${list.name}" ${checked} />
+	        <span>${list.name}</span>	
+       	 	<c:set var="checked" value=""/>		 
+	      </label>
+   		 </p>
+	</c:forEach>
+       	<button class="btn waves-effect #e8eaf6 indigo lighten-5" name="add">
+      	<span class="grey-text text-darken-4">カードを登録</span>
+      	</button>
+</form>
 	
 	</div>		
 	</body>
