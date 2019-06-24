@@ -61,7 +61,7 @@
 			
 			<img src="img/card.png" width="45" height="45" alt="CARD">
 			カードまたは<br>
-			スマートフォンをかざすだけ
+			スマートフォンをかざすだけ!
 			<br>
 
 
