@@ -70,5 +70,13 @@
     <servlet-name>sign-up</servlet-name>
     <url-pattern>/sign-up</url-pattern>
   </servlet-mapping>
+      <servlet>
+    <servlet-name>mypage</servlet-name>
+    <jsp-file>/mypage.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>mypage</servlet-name>
+    <url-pattern>/mypage</url-pattern>
+  </servlet-mapping>
 
 </web-app>
