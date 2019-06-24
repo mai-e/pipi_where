@@ -7,11 +7,13 @@
 		<head>
 			<meta charset="UTF-8">
 			<title>OSUNEGI CARDMAP</title>
-    		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+			<link rel="stylesheet" href="css/style.css">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 			<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 		</head>
+
 	<body class="#34314c navy lighten-5 navy-text">
 	<div class="container">
 	<div class="row">
@@ -39,45 +41,38 @@
 		<a class="#7986cb indigo lighten-2 waves-effect waves-light btn-small" href="card_list">カードを選ぶ</a>
 	</div>
 	</div>
-
 	</header>
-
-
 	</div>
-		<section>
-			<h1>"キャッシュレス時代"の到来</h1>
-			<p>テキストを入力テキストを入力テキストを入力テキストを入力テキストを入浴</p>
-			<p>テキストを入力２テキストを入力２テキストを入力２テキストを入力２</p>
-		</section>
+		<div class="no1">
 
-	<div id="sub">
-	<aside>
-	 	<section>
-			<h2>今までにない身軽さを！</h2>
-		</section>
+			<h3>"キャッシュレス時代"の到来</h3>
+			テキストを入力テキストを入力テキストを入力テキストを入力テキストを入浴
+			ストを入力２テキストを入力２テキストを入力２テキストを入力２
+		</div>
 
-		<section>
+		<div class="no2">
+			<h5>今までにない身軽さを！</h5>
+
 			<img src="img/atm.png" width="45" height="45" alt="ATM">
-			<p>ATMに<br>
-			駆け込む必要がなくなります</p>
-		</section>
-		<section>
+			ATMに<br>
+			駆け込む必要がなくなります
+			<br>
+			
 			<img src="img/clock.png" width="45" height="45" alt="clock">
-			<p>お財布をしまう時間も<br>
-			必要なくなります</p>
-		</section>
-		<section>
+			お財布をしまう時間も<br>
+			必要なくなります
+			<br>
+			
 			<img src="img/card.png" width="45" height="45" alt="CARD">
-			<p>カードまたは<br>
-			スマートフォンをかざすだけ</p>
-		</section>
-	</aside>
-	</div>
+			カードまたは<br>
+			スマートフォンをかざすだけ
+			<br>
+			
+		</div>
 
-	<footer>
+		<footer>
 			<small>Copyright &copy; OSUNEGI CARDMAP. All rights reserved.</small>
-	</footer>
-
+		</footer>
 	</div>
 	</body>
 	</html>
