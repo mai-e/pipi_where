@@ -44,7 +44,6 @@
 	</div>
 
 	</header>
-
 			<div class="row">
 				<form class="col s12" action="sign-up.do" method="post">
 					<div class="row">
