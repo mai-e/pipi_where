@@ -12,6 +12,7 @@ import javax.servlet.http.HttpSession;
 import jp.co.comnic.lesson.osunegi.pipi_where.beans.Card;
 import jp.co.comnic.lesson.osunegi.pipi_where.dao.CardDao;
 import jp.co.comnic.lesson.osunegi.pipi_where.dao.DaoException;
+import jp.co.comnic.lesson.osunegi.pipi_where.model.RateComparator;
 import jp.co.comnic.lesson.osunegi.pipi_where.model.VarietyComparator;
 
 public class SortAction implements Action{
@@ -45,7 +46,7 @@ public class SortAction implements Action{
 		if(variety!= null) {
 			Collections.sort(cardList, new VarietyComparator());
 		}else if(rate != null) {
-			Collections.sort(cardList, new VarietyComparator());
+			Collections.sort(cardList, new RateComparator());
 		}
 		 
 		session.setAttribute("cardList", cardList);
