@@ -36,7 +36,7 @@
 		<a class="#7986cb indigo lighten-2 waves-effect waves-light  btn-small" href="top">ホーム</a>
 		<a class="#7986cb indigo lighten-2 waves-effect waves-light btn-small" href="login">ログイン</a>
 		<a class="#7986cb indigo lighten-2 waves-effect waves-light btn-small" href="map_search">カードからお店を検索</a>
-		<a class="#ffca28 amber lighten-1  grey-text text-darken-4 waves-effect waves-light btn-small" href="card_list">カードを選ぶ</a>
+		<a class="#ffca28 amber lighten-1  grey-text text-darken-4 waves-effect waves-light btn-small" href="card_list.do">カードを選ぶ</a>
 	</div>
 	</div>
 
@@ -45,20 +45,25 @@
 
 	<br>
 
-	<form action="sort.do" method="post">
+	<form action="card_list.do" method="post">
 		<input class="btn waves-effect #e8eaf6 indigo lighten-5" type="submit" name="variety" value="使える店">
 		<input class="btn waves-effect #e8eaf6 indigo lighten-5" type="submit" name="rate" value="還元率">
 	</form>
 
-                <c:forEach var="list" items="${account.cardList}">
+                <c:forEach var="list" items="${cardList}">
                 	<table>
                 	<tr>
                 		<td>
                 		${list.name}<br>
                 		<img src="img/${list.cardName}.webp" width="120px" height="40%"><br>
-                		<a  href= "${list.url}" target="_blank">詳しく知る</a><br>
+                		</td>
+                		<td>
+						使える店：${list.usableStoreList.size()}<br>
                 		還元率：${list.rate}
                 		</td>
+						<td>
+                		<a  href= "${list.url}" target="_blank">詳しく知る</a><br>
+						</td>
                 	</tr>
                 	</table>
 				</c:forEach>
