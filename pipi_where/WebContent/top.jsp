@@ -73,6 +73,7 @@
 		<footer>
 			<small>Copyright &copy; OSUNEGI CARDMAP. All rights reserved.</small>
 		</footer>
+		
 	</div>
 	</body>
 	</html>
