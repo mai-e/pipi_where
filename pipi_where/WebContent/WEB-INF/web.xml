@@ -13,6 +13,10 @@
     <param-name>/search.do</param-name>
     <param-value>jp.co.comnic.lesson.osunegi.pipi_where.controller.SearchAction</param-value>
   </context-param>
+   <context-param>
+    <param-name>/sort.do</param-name>
+    <param-value>jp.co.comnic.lesson.osunegi.pipi_where.controller.SortAction</param-value>
+  </context-param>
   <servlet>
     <servlet-name>top</servlet-name>
     <jsp-file>/top.jsp</jsp-file>

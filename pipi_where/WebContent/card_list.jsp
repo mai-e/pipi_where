@@ -45,6 +45,10 @@
 
 	<br>
 
+	<form action="sort.do" method="post">
+		<input class="btn waves-effect #e8eaf6 indigo lighten-5" type="submit" name="variety" value="使える店">
+		<input class="btn waves-effect #e8eaf6 indigo lighten-5" type="submit" name="rate" value="還元率">
+	</form>
 
                 <c:forEach var="list" items="${account.cardList}">
                 	<table>
@@ -52,7 +56,9 @@
                 		<td>
                 		${list.name}<br>
                 		<img src="img/${list.cardName}.webp" width="120px" height="40%"><br>
-                		<a  href= "${list.url}">詳しく知る</a>
+                		<a  href= "${list.url}">詳しく知る</a><br>
+                		使えるお店の数： ${list.usableStoreList.length()}<br>
+                		還元率：${list.rate}
                 		</td>
                 	</tr>
                 	</table>
