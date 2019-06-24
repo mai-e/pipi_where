@@ -22,6 +22,7 @@ public class CardDao {
 			String cardName;
 			double rate;
 			ArrayList<String> usableStoreList;
+			String url;
 			
 				try (ResultSet rs = pstmt.executeQuery()) {
 					while (rs.next()) {
@@ -29,7 +30,8 @@ public class CardDao {
 						cardName = rs.getString("card_name_wep");
 						rate = rs.getDouble("rate_max");
 						usableStoreList = UsableStoreDao.findBy(name);
-						cardList.add(new Card(name, cardName, rate, usableStoreList));
+						url = rs.getString("url");
+						cardList.add(new Card(name, cardName, rate, usableStoreList,url));
 					}
 				}
 			} catch (NamingException | SQLException e) {
