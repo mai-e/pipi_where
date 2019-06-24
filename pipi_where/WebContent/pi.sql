@@ -22,11 +22,12 @@ CREATE TABLE IF NOT EXISTS `account` (
   `password` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- テーブル pipi_where.account: ~2 rows (約) のデータをダンプしています
+-- テーブル pipi_where.account: ~3 rows (約) のデータをダンプしています
 /*!40000 ALTER TABLE `account` DISABLE KEYS */;
 INSERT INTO `account` (`user_name`, `password`) VALUES
 	('John', 'admin'),
-	('Guest', NULL);
+	('Guest', NULL),
+	('Bill', 'admin');
 /*!40000 ALTER TABLE `account` ENABLE KEYS */;
 
 --  テーブル pipi_where.card の構造をダンプしています
@@ -35,18 +36,19 @@ CREATE TABLE IF NOT EXISTS `card` (
   `card_name` varchar(30) NOT NULL,
   `rate_max` float DEFAULT NULL,
   `card_name_wep` varchar(50) DEFAULT NULL,
-  `url` varchar(100) DEFAULT NULL
+  `url` varchar(100) DEFAULT NULL,
+  `charge` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- テーブル pipi_where.card: ~6 rows (約) のデータをダンプしています
 /*!40000 ALTER TABLE `card` DISABLE KEYS */;
-INSERT INTO `card` (`card_id`, `card_name`, `rate_max`, `card_name_wep`, `url`) VALUES
-	(1, 'LINEPay', 5, 'linepay', 'https://line.me/ja/pay'),
-	(2, '楽天Edy', 0.5, 'rakutenedy', 'https://edy.rakuten.co.jp/'),
-	(3, 'PayPay', 3, 'paypay', 'https://paypay.ne.jp/'),
-	(4, 'origamiPay', 0, 'origamipay', 'https://origami.com/'),
-	(5, 'Suica', 0, 'suica', 'https://www.jreast.co.jp/suica/'),
-	(6, 'nanaco', 1, 'nanaco', 'https://www.nanaco-net.jp/');
+INSERT INTO `card` (`card_id`, `card_name`, `rate_max`, `card_name_wep`, `url`, `charge`) VALUES
+	(1, 'LINEPay', 5, 'linepay', 'https://line.me/ja/pay', '銀行口座'),
+	(2, '楽天Edy', 0.5, 'rakutenedy', 'https://edy.rakuten.co.jp/', '現金　クレジットカード'),
+	(3, 'PayPay', 3, 'paypay', 'https://paypay.ne.jp/', '銀行口座　クレジットカード'),
+	(4, 'origamiPay', 0, 'origamipay', 'https://origami.com/', '銀行口座　クレジットカード'),
+	(5, 'Suica', 0, 'suica', 'https://www.jreast.co.jp/suica/', '現金　クレジットカード'),
+	(6, 'nanaco', 1, 'nanaco', 'https://www.nanaco-net.jp/', '現金　クレジットカード');
 /*!40000 ALTER TABLE `card` ENABLE KEYS */;
 
 --  テーブル pipi_where.store の構造をダンプしています
