@@ -66,7 +66,6 @@
 	            	</button>
 	            	</div>
 	            </form>
-				<div>  New member: <a href="sign-up">Sign-Up</a></div>
 			</div>
 	</div>
 	</body>
