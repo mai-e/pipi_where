@@ -43,5 +43,22 @@ public class AccountDao {
 			}
 		return account;
 	}
+	
+	public static int save(Account account) throws DaoException {
+		
+		String sql = "INSERT INTO account(user_name, password) VALUES(?, ?)";
+		
+		try (Connection conn = ConnectionFactory.getConnection();
+			 PreparedStatement pstmt = conn.prepareStatement(sql)) {
+			
+			pstmt.setString(1, account.getUserName());
+			pstmt.setString(2, account.getPassword());
+			
+			return pstmt.executeUpdate();
+			
+		} catch (NamingException | SQLException e) {
+			throw new DaoException(e);
+		}
+	}
 }
 

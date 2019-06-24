@@ -52,7 +52,7 @@
                 		<td>
                 		${list.name}<br>
                 		<img src="img/${list.cardName}.webp" width="120px" height="40%"><br>
-                		<a src = "${list.url}">詳しく知る</a>
+                		<a  href= "${list.url}">詳しく知る</a>
                 		</td>
                 	</tr>
                 	</table>
