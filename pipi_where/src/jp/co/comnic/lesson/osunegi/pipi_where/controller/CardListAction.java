@@ -15,7 +15,7 @@ import jp.co.comnic.lesson.osunegi.pipi_where.dao.DaoException;
 import jp.co.comnic.lesson.osunegi.pipi_where.model.RateComparator;
 import jp.co.comnic.lesson.osunegi.pipi_where.model.VarietyComparator;
 
-public class SortAction implements Action{
+public class CardListAction implements Action{
 
 	@Override
 	public Dispatcher execute(HttpServletRequest request, HttpServletResponse response)
@@ -48,7 +48,7 @@ public class SortAction implements Action{
 		}else if(rate != null) {
 			Collections.sort(cardList, new RateComparator());
 		}
-		 
+		
 		session.setAttribute("cardList", cardList);
 		
 		

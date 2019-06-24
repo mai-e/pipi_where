@@ -9,7 +9,7 @@ public class RateComparator implements Comparator<Card>{
 	@Override
 	public int compare(Card o1, Card o2) {
 		// TODO Auto-generated method stub
-		return o1.getRate() < o2.getRate() ? -1 : 1;
+		return o1.getRate() > o2.getRate() ? -1 : 1;
 	}
 
 }

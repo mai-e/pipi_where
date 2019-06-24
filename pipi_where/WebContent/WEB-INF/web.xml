@@ -15,8 +15,8 @@
     <param-value>jp.co.comnic.lesson.osunegi.pipi_where.controller.SearchAction</param-value>
   </context-param>
    <context-param>
-    <param-name>/sort.do</param-name>
-    <param-value>jp.co.comnic.lesson.osunegi.pipi_where.controller.SortAction</param-value>
+    <param-name>/card_list.do</param-name>
+    <param-value>jp.co.comnic.lesson.osunegi.pipi_where.controller.CardListAction</param-value>
   </context-param>
     <context-param>
     <param-name>/sign-up.do</param-name>
