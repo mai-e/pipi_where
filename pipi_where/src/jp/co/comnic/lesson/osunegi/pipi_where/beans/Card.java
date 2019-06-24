@@ -8,17 +8,19 @@ public class Card {
 	private double rate;						// 還元率
 	private ArrayList<String> usableStoreList;	// 使える店のリスト
 	private String url;
+	private String charge;
 	
 	public Card() {
 		
 	}
 	
-	public Card(String name, String cardName, double rate, ArrayList<String> usableStoreList, String url) {
+	public Card(String name, String cardName, double rate, ArrayList<String> usableStoreList, String url, String charge) {
 		this.name = name;
 		this.cardName = cardName;
 		this.rate = rate;
 		this.usableStoreList = usableStoreList;
 		this.url = url;
+		this.charge = charge;
 	}
 
 	public String getName() {
@@ -51,7 +53,12 @@ public class Card {
 	public void setUrl(String url) {
 		this.url = url;
 	}
-	
+	public String getCharge() {
+		return charge;
+	}
+	public void setCharge(String charge) {
+		this.charge = charge;
+	}
 	
 	
 }
