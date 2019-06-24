@@ -21,19 +21,15 @@ public class UsableCardDao {
 		try (Connection conn = ConnectionFactory.getConnection();
 				 PreparedStatement pstmt = conn.prepareStatement(sql)) {
 			pstmt.setString(1, userName);
-			String name;
-			String cardName;
-			double rate;
-			ArrayList<String> usableStoreList;
-			String url;
 				try (ResultSet rs = pstmt.executeQuery()) {
 					while (rs.next()) {
-						name = rs.getString("card_name");
-						cardName = rs.getString("card_name_wep");
-						rate = rs.getDouble("rate_max");
-						usableStoreList = UsableStoreDao.findBy(name);
-						url = rs.getString("url");
-						cardList.add(new Card(name, cardName, rate, usableStoreList, url));
+						String name = rs.getString("card_name");
+						String cardName = rs.getString("card_name_wep");
+						double rate = rs.getDouble("rate_max");
+						ArrayList<String> usableStoreList = UsableStoreDao.findBy(name);
+						String url = rs.getString("url");
+						String charge = rs.getString("charge");
+						cardList.add(new Card(name, cardName, rate, usableStoreList, url, charge));
 					}
 				}
 			} catch (NamingException | SQLException e) {
