@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import jp.co.comnic.lesson.osunegi.pipi_where.beans.Card;
+import jp.co.comnic.lesson.osunegi.pipi_where.dao.CardDao;
+import jp.co.comnic.lesson.osunegi.pipi_where.dao.DaoException;
 import jp.co.comnic.lesson.osunegi.pipi_where.model.VarietyComparator;
 
 public class SortAction implements Action{
@@ -33,7 +35,13 @@ public class SortAction implements Action{
 //			    }
 //			
 		HttpSession session = request.getSession();
-		ArrayList<Card> cardList = (ArrayList<Card>) session.getAttribute("cardList");
+		ArrayList<Card> cardList = new ArrayList<Card>();
+		try {
+			cardList = CardDao.findAll();
+		} catch (DaoException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		if(variety!= null) {
 			Collections.sort(cardList, new VarietyComparator());
 		}else if(rate != null) {
