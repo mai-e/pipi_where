@@ -35,6 +35,7 @@ public class SignUpAction implements Action {
 			
 			account = new Account(userName, password1);
 			AccountDao.save(account);
+			System.out.println(account);
 			
 		} catch (DaoException e) {
 			throw new ServletException(e);
