@@ -7,7 +7,6 @@
 		<head>
 			<meta charset="UTF-8">
 			<title>OSUNEGI CARDMAP</title>
-			<link rel="stylesheet" href="css/style.css">
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 			<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -46,14 +45,8 @@
 	</div>
 	</div>
 	</header>
-	</div>
-		<div class="no1">
-
-			<h3>"キャッシュレス時代"の到来</h3>
-			テキストを入力テキストを入力テキストを入力テキストを入力テキストを入浴
-			ストを入力２テキストを入力２テキストを入力２テキストを入力２
-		</div>
-
+	</div>  
+  
 		<div class="no2">
 			<h5>今までにない身軽さを！</h5>
 
