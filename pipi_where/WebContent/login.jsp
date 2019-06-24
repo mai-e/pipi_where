@@ -61,6 +61,7 @@
 					<input class="btn waves-effect #e8eaf6 indigo lighten-5" type="submit" value="Login">
 					<p class="red-text darken-2">${error}</p>
 				</form>
+				
 
 	            <form class="col s12" action="login.do" method="post">
 	            	<div>
