@@ -54,6 +54,7 @@
 	</div>
 
 	</header>
+<<<<<<< HEAD
 
 	<span class="grey-text text-darken-2">
 		現在地に近いキャッシュレス決済対応の<br>
@@ -63,6 +64,8 @@
 		を検索中です。
 	</span>
 	
+=======
+>>>>>>> branch 'master' of https://github.com/mai-e/pipi_where.git
 		<div id="map"></div>
 		<script src="https://maps.googleapis.com/maps/api/js?key=api&callback=initMap&libraries=places"></script>
 	</div>
