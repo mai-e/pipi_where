@@ -37,4 +37,8 @@ public class UsableCardDao {
 			}
 		return cardList;
 	}
+	public static void save(String userName, String cardName) {
+		String sql = "INSERT INTO usable_card(user_name, card_id) VALUES(?, ?)";
+		
+	}
 }
