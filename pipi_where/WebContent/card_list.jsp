@@ -24,7 +24,8 @@
 		<a href="#" class="brand-logo">&ensp;キャッシュレス決済を比較する</a>
 		<c:if test="${account!=null}">
 		<ul id="nav-mobile" class="right hide-on-med-and-down">
-			<li><a href="mypage"><i class ="material-icons">person</i></a>
+			<li><span class="amber-text text-lighten-1">MY PAGE</span></li>
+			<li><a href="mypage"><i class ="material-icons">person</i></a></li>
 			<li>${account.userName}&emsp;</li>
 			<li>LastLoginTime: <javatime:format value="${account.lastLoginTime}" pattern="hh:mm:ss" /></li>
 			<li><a href="logout.do"><i class="material-icons">exit_to_app</i></a></li>
