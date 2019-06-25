@@ -65,7 +65,6 @@
 		</span>
 		</span>
 	</c:if>
-
 	<br>
 	        <div class="row">
 	            <form class="col s12" action="search.do" method="post">
