@@ -27,7 +27,6 @@ public class SearchAction implements Action {
 		    }catch(UnsupportedEncodingException e){
 		      System.out.println(e);
 		    }
-		System.out.println(cardName);
 		HttpSession session = request.getSession();
 		forwardPath = "map_search";
 		
@@ -40,6 +39,7 @@ public class SearchAction implements Action {
 			}
 		}
 		session.setAttribute("usableStoreList", usableStoreList);
+		session.setAttribute("selectedCard", cardName);
 		
 		
 		return new Redirector(request, response, forwardPath);

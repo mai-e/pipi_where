@@ -64,13 +64,15 @@
 	                    </div>
                 	</div>
 
-                <select name="cardList">
+                <select name="cardList" onChange="this.form.submit()">
                 <c:forEach var="list" items="${account.cardList}">
-					<option value="${list.name}">${list.name}</option>
+                	<c:if test="${selectedCard==list.name}">
+                		<c:set var="selected" value="selected"/>
+                	</c:if>
+					<option value="${list.name}" ${selected}>${list.name}</option>
+					<c:set var="selected" value=""/>
 				</c:forEach>
                 </select>
-                <br>
-                	<input class="btn waves-effect #e8eaf6 indigo lighten-5" type="submit" value="Search">
 				</form>
 				<br>
 				<div class="col s5">
