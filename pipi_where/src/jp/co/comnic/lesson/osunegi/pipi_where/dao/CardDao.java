@@ -1,5 +1,6 @@
 package jp.co.comnic.lesson.osunegi.pipi_where.dao;
 
+import java.io.UnsupportedEncodingException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -33,5 +34,19 @@ public class CardDao {
 				throw new DaoException(e);
 			}
 		return cardList;
+	}
+	
+	public static void save(String userName, String cardName) {
+		
+	}
+	
+	public static void save(String userName, String[] cardList) {
+		String cardName = "a";
+		try {
+		      byte[] byteData = cardName.getBytes("ISO_8859_1");
+		      cardName = new String(byteData, "UTF-8");
+		    }catch(UnsupportedEncodingException e){
+		      System.out.println(e);
+		    }
 	}
 }
