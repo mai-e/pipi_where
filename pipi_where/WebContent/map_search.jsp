@@ -49,7 +49,7 @@
 			<a class="#7986cb indigo lighten-2 waves-effect waves-light btn-small" href="login">ログイン</a>
 		 	<a class="#7986cb indigo lighten-2 waves-effect waves-light btn-small" href="sign-up">アカウント登録</a>
 		 	<a class="#ffca28 amber lighten-1  grey-text text-darken-4 waves-effect waves-light btn-small" href="map_search">カードからお店を検索</a>
-		 	<a class="#7986cb indigo lighten-2 waves-effect waves-light btn-small" href="card_list.do">カードを選ぶ</a>
+		 			<a class="#7986cb indigo lighten-2 waves-effect waves-light btn-small" href="card_list.do">カードの特徴を比較</a>
 	</div>
 	</div>
 
@@ -86,6 +86,7 @@
                 </select>
 				</form>
 				<br>
+				<div class="row">
 				<div class="col s5">
 				<ul>
                 <c:forEach var="list" items="${usableStoreList}">
@@ -99,6 +100,7 @@
 					<br>
 				</c:forEach>
 					</ul>
+					</div>
 					</div>
 			</div>
 		</div>

@@ -7,7 +7,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>キャッシュレス決済可能な店舗一覧</title>
+		<title>カードからお店を検索</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -28,7 +28,7 @@
 
 	<nav>
 		<div class="nav-wrapper #7986cb indigo lighten-2">
-		<a href="#" class="brand-logo">&ensp;キャッシュレス決済可能な店舗を探す</a>
+		<a href="#" class="brand-logo">&ensp;カードからお店を検索</a>
 		<c:if test="${account!=null}">
 		<ul id="nav-mobile" class="right hide-on-med-and-down">
 			<li><span class="amber-text text-lighten-1">MY PAGE</span></li>
@@ -48,12 +48,20 @@
 			<a class="#7986cb indigo lighten-2 waves-effect waves-light btn-small" href="login">ログイン</a>
 		 	<a class="#7986cb indigo lighten-2 waves-effect waves-light btn-small" href="sign-up">アカウント登録</a>
 		 	<a class="#ffca28 amber lighten-1  grey-text text-darken-4 waves-effect waves-light btn-small" href="map_search">カードからお店を検索</a>
-		 	<a class="#7986cb indigo lighten-2 waves-effect waves-light btn-small" href="card_list.do">カードを選ぶ</a>
+		 			<a class="#7986cb indigo lighten-2 waves-effect waves-light btn-small" href="card_list.do">カードの特徴を比較</a>
 	</div>
 	</div>
 
 	</header>
 
+	<span class="grey-text text-darken-2">
+		現在地に近いキャッシュレス決済対応の<br>
+		<span class="red-text text-lighten-1">
+			${param.name}
+		</span>
+		を検索中です。
+	</span>
+	
 		<div id="map"></div>
 		<script src="https://maps.googleapis.com/maps/api/js?key=api&callback=initMap&libraries=places"></script>
 	</div>
