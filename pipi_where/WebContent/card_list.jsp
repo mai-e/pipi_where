@@ -51,28 +51,55 @@
 	<br>
 
 	<form action="card_list.do" method="post">
-		<input class="btn waves-effect #e8eaf6 indigo lighten-5" type="submit" name="variety" value="使える店">
-		<input class="btn waves-effect #e8eaf6 indigo lighten-5" type="submit" name="rate" value="還元率">
+		<input class="btn waves-effect #e8eaf6 indigo lighten-5" type="submit" name="variety" value="使える店が多い順">
+		&nbsp;
+		<input class="btn waves-effect #e8eaf6 indigo lighten-5" type="submit" name="rate" value="還元率が高い順">
 	</form>
+	
+	<span class="grey-text text-darken-2">
 
-                <c:forEach var="list" items="${cardList}">
+                
+
                 	<table>
-                	<tr>
-                		<td>
-                		${list.name}<br>
-                		<img src="img/${list.cardName}.webp" width="120px" height="40%"><br>
-                		</td>
-                		<td>
-						使える店：${list.usableStoreList.size()}<br>
-                		還元率：${list.rate}<br>
-                		チャージ方法：${list.charge }
+                	<thead>
+                		<tr>
+                			<th>カード名</th>
+                			<th>チャージ方法</th>
+                			<th>公式サイト</th>
+                		</tr>
+                	</thead>
+                	
+                	<tbody>
+                	<c:forEach var="list" items="${cardList}">
+						<tr>
+							<td>
+                				${list.name}<br>
+                				<img src="img/${list.cardName}.webp" width="100px" height="100PX">
+                			</td>
+                			<td>${list.charge }</td>
+                			<td>
+                				<a  href= "${list.url}" target="_blank">${list.name}について</a><br>
+							</td>
+						</tr>
+					</c:forEach>
+					</tbody>
+					</table>
+					
+<%-- 					
+					使える店が多い順：${list.usableStoreList.size()}<br>
+                		還元率が高い順：${list.rate}<br>
+    	            	<div class="left-align">
+    						チャージ方法：${list.charge }
+    					</div>
                 		</td>
 						<td>
                 		<a  href= "${list.url}" target="_blank">詳しく知る</a><br>
 						</td>
                 	</tr>
                 	</table>
-				</c:forEach>
+                	</tbody> --%>
+
+		</span>
 		</div>
 	</body>
 	</html>
