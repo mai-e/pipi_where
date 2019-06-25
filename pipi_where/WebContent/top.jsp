@@ -16,7 +16,7 @@
 
 	</head>
 
-	<body class="#ffffff white indigo-text text-lighten-3">
+	<body class="#ffffff white grey-text text-darken-2">
 	<div class="container">
 	<header>
 	<br>
@@ -43,7 +43,7 @@
 			<a class="#7986cb indigo lighten-2 waves-effect waves-light btn-small" href="login">ログイン</a>
 		 	<a class="#7986cb indigo lighten-2 waves-effect waves-light btn-small" href="sign-up">アカウント登録</a>
 		 	<a class="#7986cb indigo lighten-2 waves-effect waves-light btn-small" href="map_search">カードからお店を検索</a>
-		 	<a class="#7986cb indigo lighten-2 waves-effect waves-light btn-small" href="card_list.do">カードを選ぶ</a>
+		 			<a class="#7986cb indigo lighten-2 waves-effect waves-light btn-small" href="card_list.do">カードの特徴を比較</a>
 	</div>
 	</div>
 
@@ -59,12 +59,8 @@
         </div>
         <div class="card-content">
           <p>
-			<span class="fs7">
-			<span class="grey-text text-darken-2">
 				いま、世間ではミニマリストなるものが流行っている。しかし、現代のITがこのまま進化していくならば、全員がミニマリストになるだろう。
 				財布も鞄もいらない。身体ひとつで出かけられる楽しみをささやかに。まずは、キャッシュレス決済から始めよう。
-			</span>
-			</span>
           </p>
         </div>
         <div class="card-action">
@@ -77,15 +73,14 @@
     	<div class="col s7 m6">
      	<div class="card">
         <div class="card-content">
-          <p>
-			<span class="fs7">
-			<span class="grey-text text-darken-2">
-				<br>
-				会計には5秒あればいい。
-				<br>
-			</span>
-			</span>
-          </p>
+
+		<br>
+			<div>
+    			<h5 class="center-align">
+    				会計には５秒あればいい。
+    			</h5>
+  			</div>
+		<br><br>
         </div>
         <div class="card-action">
           <a href="http://localhost:8080/pipi_where/card_list">キャッシュレスの方法を選ぶ</a>
