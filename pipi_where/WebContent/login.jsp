@@ -23,6 +23,7 @@
 		<a href="#" class="brand-logo">&ensp;ログインまたはゲストを選択</a>
 		<c:if test="${account!=null}">
 		<ul id="nav-mobile" class="right hide-on-med-and-down">
+			<li><span class="amber-text text-lighten-1">MY PAGE</span></li>
 			<li><a href="mypage"><i class ="material-icons">person</i></a>
 			<li>${account.userName}&emsp;</li>
 			<li>LastLoginTime: <javatime:format value="${account.lastLoginTime}" pattern="hh:mm:ss" /></li>
