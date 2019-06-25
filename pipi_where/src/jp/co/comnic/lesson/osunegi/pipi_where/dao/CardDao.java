@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 import javax.naming.NamingException;
 
-import jp.co.comnic.lesson.osunegi.pipi_where.beans.Card;
+import jp.co.comnic.lesson.osunegi.pipi_where.beans.Card;	
 
 public class CardDao {
 	
@@ -36,17 +36,39 @@ public class CardDao {
 		return cardList;
 	}
 	
-	public static void save(String userName, String cardName) {
-		
+	public static int save(String userName, String cardName) throws DaoException {
+	String sql = "INSERT INTO usable_card(user_name, card_id) VALUES(?, ?)";
+	String cardSql = "SELECT c.card_id from card c where c.card_name = ?";
+	int cardId;
+		try (Connection conn = ConnectionFactory.getConnection();
+			 PreparedStatement pstmt = conn.prepareStatement(cardSql)) {
+			pstmt.setString(1, cardName);
+			try (ResultSet rs = pstmt.executeQuery()) {
+				if (rs.next()) {
+					cardId = rs.getInt("card_id");
+					try(PreparedStatement pstmt2 = conn.prepareStatement(sql)){
+						pstmt2.setString(1,userName);
+						pstmt2.setInt(2, cardId);
+						return pstmt2.executeUpdate();
+					}
+				}
+			}
+			return 0;
+		}catch(NamingException | SQLException e){
+			throw new DaoException(e);
+		}
+			
 	}
 	
-	public static void save(String userName, String[] cardList) {
-		String cardName = "a";
+	public static void save(String userName, String[] cardList) throws DaoException {
+		for(String cardName: cardList) {
 		try {
 		      byte[] byteData = cardName.getBytes("ISO_8859_1");
 		      cardName = new String(byteData, "UTF-8");
+		      save(userName, cardName);
 		    }catch(UnsupportedEncodingException e){
 		      System.out.println(e);
 		    }
+		}
 	}
 }

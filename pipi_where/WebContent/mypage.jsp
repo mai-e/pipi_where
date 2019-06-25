@@ -43,7 +43,6 @@
 	</div>
 	</div>
 	</header>
-	
 <form action="register.do" method="post">
 	<c:forEach var="list" items="${cardList}">
 		<c:forEach var="card" items="${account.cardList}">
