@@ -53,7 +53,6 @@
 	</div>
 
 	</header>
-
 		<div id="map"></div>
 		<script src="https://maps.googleapis.com/maps/api/js?key=api&callback=initMap&libraries=places"></script>
 	</div>

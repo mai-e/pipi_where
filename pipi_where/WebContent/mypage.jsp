@@ -44,16 +44,16 @@
 	</div>
 	</header>
 	
-<form action="ｒegister.do" method="post">
+<form action="register.do" method="post">
 	<c:forEach var="list" items="${cardList}">
 		<c:forEach var="card" items="${account.cardList}">
-		 <c:if test="${list.name == card.name }" var="flg">
+		 <c:if test="${list.name == card.name }">
 		 	<c:set var="checked" value="checked='checked' disabled='disabled'"/>
 		 </c:if>
    		</c:forEach>
 		 <p>
 	      <label>
-	        <input type="checkbox" class="filled-in"name="${list.name}" ${checked} />
+	        <input type="checkbox" class="filled-in" name="checkbox" value="${list.name}" ${checked} />
 	        <span>${list.name}</span>	
        	 	<c:set var="checked" value=""/>		 
 	      </label>
