@@ -22,7 +22,7 @@
 
 	<nav>
 		<div class="nav-wrapper #7986cb indigo lighten-2">
-		<a href="#" class="brand-logo">&ensp;トップページ</a>
+		<a href="#" class="brand-logo">&ensp;OSUNEGI　MAP</a>
 		<c:if test="${account!=null}">
 		<ul id="nav-mobile" class="right hide-on-med-and-down">
 			<li><a href="mypage"><i class ="material-icons">person</i></a>
@@ -57,8 +57,11 @@
         </div>
         <div class="card-content">
           <p>
-			<span class="fs7">いま、世間ではミニマリストなるものが流行っている。しかし、現代のITがこのまま進化していくならば、全員がミニマリストになるだろう。
-			財布も鞄もいらない。身体ひとつで出かけられる楽しみをささやかに。まずは、キャッシュレス決済から始めよう。
+			<span class="fs7">
+			<span class="grey-text text-darken-2">
+				いま、世間ではミニマリストなるものが流行っている。しかし、現代のITがこのまま進化していくならば、全員がミニマリストになるだろう。
+				財布も鞄もいらない。身体ひとつで出かけられる楽しみをささやかに。まずは、キャッシュレス決済から始めよう。
+			</span>
 			</span>
           </p>
         </div>
@@ -73,47 +76,31 @@
      	<div class="card">
         <div class="card-content">
           <p>
-			<span class="fs7">いま、世間ではミニマリストなるものが流行っている。しかし、現代のITがこのまま進化していくならば、全員がミニマリストになるだろう。
-			財布も鞄もいらない。身体ひとつで出かけられる楽しみをささやかに。まずは、キャッシュレス決済から始めよう。
+			<span class="fs7">
+			<span class="grey-text text-darken-2">
+				<br>
+				会計には5秒あればいい。
+				<br>
+			</span>
 			</span>
           </p>
         </div>
         <div class="card-action">
-          <a href="https://meti-journal.jp/policy/201810/">経済産業省「キャッシュレス決済が日本を変える」</a>
+          <a href="http://localhost:8080/pipi_where/card_list">キャッシュレスの方法を選ぶ</a>
         </div>
         <div class="card-image">
-          <img src="img/inbag.png">
-          <span class="card-title">身軽に出かけよう</span>
+          <img src="img/tokyo.png">
         </div>
       </div>
     </div>
     
-		<div class="col s6 m6">
-		<div class="card-panel #efebe9 brown lighten-5 teal">
-		<span class="grey-text text-darken-3">
-  
-			<img src="img/atm.png" width="45" height="45" alt="atm">
-    		ATMに駆け込むことがなくなります。
-			<br>
-			
-			<img src="img/clock.png" width="45" height="45" alt="clock">
-			鞄のなかから財布をさがしだす必要も、
-			<br>
-			
-			<img src="img/card.png" width="45" height="45" alt="CARD">
-			カードや携帯ひとつで事足ります。
-			<br>
-		
-		</span>
-		</div>
-		</div>
-		
 	</div>
 
 		<footer>
 			<small>Copyright &copy; OSUNEGI CARDMAP. All rights reserved.</small>
 		</footer>
 		
+	</div>
 	</div>
 	</body>
 	</html>

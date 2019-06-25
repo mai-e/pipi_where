@@ -53,7 +53,18 @@
 	</div>
 
 	</header>
-
+	
+	<c:if test="${account==null}">
+		<span class="red-text text-lighten-1">
+		<span class="fs7">
+			<a href="login"><span class="indigo-text text-lighten-2">
+				ログイン
+			</span></a>
+			後に所有しているカードが選択可能となります。<br>
+			また、ゲストでログインをするとすべてのカードが選択可能となります。
+		</span>
+		</span>
+	</c:if>
 
 	<br>
 	        <div class="row">
