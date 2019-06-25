@@ -55,35 +55,33 @@
 		&nbsp;
 		<input class="btn waves-effect #e8eaf6 indigo lighten-5" type="submit" name="rate" value="還元率が高い順">
 	</form>
-	
+	<br>
 	<span class="grey-text text-darken-2">
 
-                
-
-                	<table>
-                	<thead>
-                		<tr>
-                			<th>カード名</th>
-                			<th>チャージ方法</th>
-                			<th>公式サイト</th>
-                		</tr>
-                	</thead>
+      <table>
+      	<thead>
+        	<tr>
+            	<th>カード名</th>
+                <th>チャージ方法</th>
+                <th>公式サイト</th>
+            </tr>
+        </thead>
                 	
-                	<tbody>
-                	<c:forEach var="list" items="${cardList}">
-						<tr>
-							<td>
-                				${list.name}<br>
-                				<img src="img/${list.cardName}.webp" width="100px" height="100PX">
-                			</td>
-                			<td>${list.charge }</td>
-                			<td>
-                				<a  href= "${list.url}" target="_blank">${list.name}について</a><br>
-							</td>
-						</tr>
-					</c:forEach>
-					</tbody>
-					</table>
+      	<tbody>
+        	<c:forEach var="list" items="${cardList}">
+			<tr>
+				<td>
+       				${list.name}<br>
+       				<img src="img/${list.cardName}.webp" width="100px" height="100PX">
+       			</td>
+       			<td>${list.charge }</td>
+       			<td>
+       				<a  href= "${list.url}" target="_blank">${list.name}について</a><br>
+				</td>
+			</tr>
+			</c:forEach>
+		</tbody>
+	</table>
 					
 <%-- 					
 					使える店が多い順：${list.usableStoreList.size()}<br>
