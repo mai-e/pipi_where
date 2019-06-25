@@ -53,7 +53,7 @@
 	</div>
 
 	</header>
-	
+
 	<c:if test="${account==null}">
 		<span class="red-text text-lighten-1">
 		<span class="fs7">
