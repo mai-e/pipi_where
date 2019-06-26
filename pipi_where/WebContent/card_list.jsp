@@ -74,7 +74,9 @@
        				${list.name}<br>
        				<img src="img/${list.cardName}.webp" width="100px" height="100PX">
        			</td>
-       			<td>${list.charge }</td>
+       			<td>${list.charge }<br>
+       			還元率：${list.rate}％
+       			</td>
        			<td>
        				<a  href= "${list.url}" target="_blank">${list.name}について</a><br>
 				</td>
