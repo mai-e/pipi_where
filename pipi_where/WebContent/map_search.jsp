@@ -87,7 +87,7 @@
 				</form>
 				<br>
 				<div class="row">
-                <c:forEach var="list" items="${usableStoreList}" varStatus="status">
+                <c:forEach var="list" items="${usableStoreList}">
 				<div class="store">
 					<div class="col s3">
 					<a href="map_result?name=${list}">

@@ -13,10 +13,11 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 		<script src="/pipi_where/js/map.js"></script>
+		<link rel="stylesheet" href="css/style.css"/>
 		<style>
 		#map {
-			width: 700px;
-			height: 400px;
+			width: 550px;
+			height: 350px;
 		}
 		</style>
 	</head>
@@ -59,12 +60,18 @@
 		現在地に近いキャッシュレス決済対応の<br>
 		<span class="red-text text-lighten-1">
 			${param.name}
+			 
 		</span>
 		を検索中です。
 	</span><br>
-	
+		<c:forEach var="list" items="${usableStoreList}">
+			<a href="map_result?name=${list}">
+				<button class="btn waves-effect #7986cb indigo lighten-2" type="submit">
+						${list}
+				</button>
+			</a>
+		</c:forEach>
 		<div id="map"></div>
 		<script src="https://maps.googleapis.com/maps/api/js?key={api}&callback=initMap&libraries=places"></script>
-	</div>
 	</body>
 </html>
