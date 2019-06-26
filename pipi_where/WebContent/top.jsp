@@ -8,7 +8,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>おすネギのカードマップ</title>
+		<title>PiPi Where</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -23,7 +23,7 @@
 
 	<nav>
 		<div class="nav-wrapper #006064 cyan darken-4">
-		<a href="#" class="brand-logo">&ensp;OSUNEGI　MAP</a>
+		<a href="#" class="brand-logo">&ensp;PiPi Where</a>
 		<c:if test="${account!=null}">
 		<ul id="nav-mobile" class="right hide-on-med-and-down">
 			<li><span class="amber-text text-lighten-1">MY PAGE</span></li>
