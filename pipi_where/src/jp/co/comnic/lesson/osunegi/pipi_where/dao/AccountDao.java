@@ -8,7 +8,6 @@ import java.sql.SQLException;
 import javax.naming.NamingException;
 
 import jp.co.comnic.lesson.osunegi.pipi_where.beans.Account;
-
 public class AccountDao {
 	public static Account findBy(String userName) throws DaoException{
 		return findBy(userName, null);
@@ -42,6 +41,23 @@ public class AccountDao {
 				throw new DaoException(e);
 			}
 		return account;
+	}
+	
+	public static int count() throws DaoException{
+		String sql = "SELECT COUNT(*) FROM account";
+		int count = 0;
+		try (Connection conn = ConnectionFactory.getConnection();
+				 PreparedStatement pstmt = conn.prepareStatement(sql)) {
+			try (ResultSet rs = pstmt.executeQuery()) {
+				if (rs.next()) {
+					count = rs.getInt(1);
+				}
+			}
+				return count;
+				
+			} catch (NamingException | SQLException e) {
+				throw new DaoException(e);
+			}
 	}
 	
 	public static int save(Account account) throws DaoException {

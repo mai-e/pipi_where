@@ -9,8 +9,10 @@ import javax.servlet.http.HttpServletResponse;
 import jp.co.comnic.lesson.osunegi.pipi_where.beans.Account;
 import jp.co.comnic.lesson.osunegi.pipi_where.dao.AccountDao;
 import jp.co.comnic.lesson.osunegi.pipi_where.dao.DaoException;
+import jp.co.comnic.lesson.osunegi.pipi_where.model.Request;
 
 public class SignUpAction implements Action {
+	private final static String BASE_URL = "http://{IP}:5000/notify/";
 
 	@Override
 	public Dispatcher execute(HttpServletRequest request, HttpServletResponse response)
@@ -35,7 +37,10 @@ public class SignUpAction implements Action {
 			
 			account = new Account(userName, password1);
 			AccountDao.save(account);
-			System.out.println(account);
+			int count = AccountDao.count();
+			if(count > 0 && count%5 == 0) {
+				Request.callGet(BASE_URL + count);
+			}
 			
 		} catch (DaoException e) {
 			throw new ServletException(e);
