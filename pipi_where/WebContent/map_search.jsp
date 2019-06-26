@@ -12,7 +12,7 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+		<link rel="stylesheet" href="css/style.css"/>
 		<script>
 		  $(document).ready(function(){
 		    $('select').formSelect();
@@ -87,8 +87,8 @@
 				</form>
 				<br>
 				<div class="row">
-				<ul>
                 <c:forEach var="list" items="${usableStoreList}" varStatus="status">
+				<div class="store">
 					<div class="col s3">
 					<a href="map_result?name=${list}">
 					<button class="btn waves-effect #7986cb indigo lighten-2" type="submit">
@@ -96,11 +96,8 @@
 					</button>
 					</a>
 					</div>
-					<c:if test="${status.index == 3}">
-					<div></div>
-					</c:if> 
+				</div>
 				</c:forEach>
-				</ul>
 					</div>
 			</div>
 		</div>
