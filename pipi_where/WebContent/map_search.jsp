@@ -86,19 +86,13 @@
                 </select>
 				</form>
 				<br>
-				<div class="row">
-                <c:forEach var="list" items="${usableStoreList}">
-				<div class="store">
-					<div class="col s3">
-					<a href="map_result?name=${list}">
-					<button class="btn waves-effect #7986cb indigo lighten-2" type="submit">
-						${list}
-					</button>
-					</a>
-					</div>
-				</div>
-				</c:forEach>
-					</div>
+				<c:forEach var="list" items="${usableStoreList}">
+						<a href="map_result?name=${list}">
+							<button class="btn waves-effect #7986cb indigo lighten-2" type="submit">
+									${list}
+							</button>
+						</a>
+					</c:forEach>
 			</div>
 		</div>
 
