@@ -12,7 +12,7 @@ import jp.co.comnic.lesson.osunegi.pipi_where.dao.DaoException;
 import jp.co.comnic.lesson.osunegi.pipi_where.model.Request;
 
 public class SignUpAction implements Action {
-	private final static String BASE_URL = "http://{IP}:5000/notify/";
+	private final static String BASE_URL = "http://13.114.185.17:5000/notify/";
 
 	@Override
 	public Dispatcher execute(HttpServletRequest request, HttpServletResponse response)

@@ -22,7 +22,7 @@
 	<br>
 
 	<nav>
-		<div class="nav-wrapper #7986cb indigo lighten-2">
+		<div class="nav-wrapper #006064 cyan darken-4">
 		<a href="#" class="brand-logo">&ensp;OSUNEGI　MAP</a>
 		<c:if test="${account!=null}">
 		<ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -39,11 +39,11 @@
 	<div class="row">
 
 	<div class="col s10">
-			<a class="#ffca28 amber lighten-1  grey-text text-darken-4 waves-effect waves-light  btn-small" href="top">ホーム</a>
-			<a class="#7986cb indigo lighten-2 waves-effect waves-light btn-small" href="login">ログイン</a>
-		 	<a class="#7986cb indigo lighten-2 waves-effect waves-light btn-small" href="sign-up">アカウント登録</a>
-		 	<a class="#7986cb indigo lighten-2 waves-effect waves-light btn-small" href="map_search">カードからお店を検索</a>
-		 			<a class="#7986cb indigo lighten-2 waves-effect waves-light btn-small" href="card_list.do">カードの特徴を比較</a>
+			<a class="#80cbc4 teal lighten-3 waves-effect waves-light  btn-small" href="top">ホーム</a>
+			<a class="#006064 cyan darken-4 waves-effect waves-light btn-small" href="login">ログイン</a>
+		 	<a class="#006064 cyan darken-4 waves-effect waves-light btn-small" href="sign-up">アカウント登録</a>
+		 	<a class="#006064 cyan darken-4 waves-effect waves-light btn-small" href="map_search">カードからお店を検索</a>
+		 	<a class="#006064 cyan darken-4 waves-effect waves-light btn-small" href="card_list.do">カードの特徴を比較</a>
 	</div>
 	</div>
 
@@ -73,14 +73,12 @@
     	<div class="col s7 m6">
      	<div class="card">
         <div class="card-content">
-
-		<br>
 			<div>
     			<h5 class="center-align">
     				会計には５秒あればいい。
     			</h5>
   			</div>
-		<br><br>
+		
         </div>
         <div class="card-action">
           <a href="card_list.do">キャッシュレスの方法を選ぶ</a>
