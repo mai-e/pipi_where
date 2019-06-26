@@ -72,7 +72,11 @@
 			</a>
 		</c:forEach>
 		<div id="map"></div>
+<<<<<<< HEAD
 		<script src="https://maps.googleapis.com/maps/api/js?key={api}&callback=initMap&libraries=places"></script>
 	</div>
+=======
+		<script src="https://maps.googleapis.com/maps/api/js?key=API&callback=initMap&libraries=places"></script>
+>>>>>>> branch 'master' of https://github.com/mai-e/pipi_where.git
 	</body>
 </html>
