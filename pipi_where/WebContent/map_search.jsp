@@ -87,20 +87,20 @@
 				</form>
 				<br>
 				<div class="row">
-				<div class="col s5">
 				<ul>
-                <c:forEach var="list" items="${usableStoreList}">
-					<li>
+                <c:forEach var="list" items="${usableStoreList}" varStatus="status">
+					<div class="col s3">
 					<a href="map_result?name=${list}">
 					<button class="btn waves-effect #7986cb indigo lighten-2" type="submit">
 						${list}
 					</button>
 					</a>
-					</li>
-					<br>
-				</c:forEach>
-					</ul>
 					</div>
+					<c:if test="${status.index == 3}">
+					<div></div>
+					</c:if> 
+				</c:forEach>
+				</ul>
 					</div>
 			</div>
 		</div>

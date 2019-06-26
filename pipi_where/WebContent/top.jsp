@@ -83,7 +83,7 @@
 		<br><br>
         </div>
         <div class="card-action">
-          <a href="http://localhost:8080/pipi_where/card_list">キャッシュレスの方法を選ぶ</a>
+          <a href="card_list.do">キャッシュレスの方法を選ぶ</a>
         </div>
         <div class="card-image">
           <img src="img/tokyo.png">
