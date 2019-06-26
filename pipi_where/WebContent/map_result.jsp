@@ -72,6 +72,6 @@
 			</a>
 		</c:forEach>
 		<div id="map"></div>
-		<script src="https://maps.googleapis.com/maps/api/js?key={api}&callback=initMap&libraries=places"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCQ28BtGrQbxNXA0FPayZMz89p6k-o_Ow&callback=initMap&libraries=places"></script>
 	</body>
 </html>
