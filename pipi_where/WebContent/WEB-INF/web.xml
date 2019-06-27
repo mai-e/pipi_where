@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
   <display-name>pipi_where</display-name>
-  
   <context-param>
     <param-name>/login.do</param-name>
     <param-value>jp.co.comnic.lesson.osunegi.pipi_where.controller.LoginAction</param-value>
@@ -14,15 +13,15 @@
     <param-name>/search.do</param-name>
     <param-value>jp.co.comnic.lesson.osunegi.pipi_where.controller.SearchAction</param-value>
   </context-param>
-   <context-param>
+  <context-param>
     <param-name>/card_list.do</param-name>
     <param-value>jp.co.comnic.lesson.osunegi.pipi_where.controller.CardListAction</param-value>
   </context-param>
-    <context-param>
+  <context-param>
     <param-name>/sign-up.do</param-name>
     <param-value>jp.co.comnic.lesson.osunegi.pipi_where.controller.SignUpAction</param-value>
   </context-param>
-  	<context-param>
+  <context-param>
     <param-name>/register.do</param-name>
     <param-value>jp.co.comnic.lesson.osunegi.pipi_where.controller.RegisterCardAction</param-value>
   </context-param>
@@ -66,7 +65,7 @@
     <servlet-name>map_result</servlet-name>
     <url-pattern>/map_result</url-pattern>
   </servlet-mapping>
-    <servlet>
+  <servlet>
     <servlet-name>sign-up</servlet-name>
     <jsp-file>/sign-up.jsp</jsp-file>
   </servlet>
@@ -74,7 +73,7 @@
     <servlet-name>sign-up</servlet-name>
     <url-pattern>/sign-up</url-pattern>
   </servlet-mapping>
-      <servlet>
+  <servlet>
     <servlet-name>mypage</servlet-name>
     <jsp-file>/mypage.jsp</jsp-file>
   </servlet>
@@ -82,5 +81,4 @@
     <servlet-name>mypage</servlet-name>
     <url-pattern>/mypage</url-pattern>
   </servlet-mapping>
-
 </web-app>

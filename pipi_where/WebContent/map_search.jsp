@@ -76,6 +76,9 @@
                 	</div>
 
                 <select name="cardList" onChange="this.form.submit()">
+				<c:if test="${usableStoreList==null}">
+					<option value ="" selected></option>				
+				</c:if>
                 <c:forEach var="list" items="${account.cardList}">
                 	<c:if test="${selectedCard==list.name}">
                 		<c:set var="selected" value="selected"/>

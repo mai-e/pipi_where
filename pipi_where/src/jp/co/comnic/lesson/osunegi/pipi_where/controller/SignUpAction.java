@@ -1,6 +1,7 @@
 package jp.co.comnic.lesson.osunegi.pipi_where.controller;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
