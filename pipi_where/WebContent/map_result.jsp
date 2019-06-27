@@ -68,7 +68,7 @@
 			<a href="map_result?name=${list}">
 				<button class="btn waves-effect #ffffff white grey-text text-darken-4" type="submit">
 				<img src="img/${list.storeName}.webp"  width="25px" height="25px">
-					${list}
+					${list.storeJpn}
 				</button>
 			</a>
 		</c:forEach>
