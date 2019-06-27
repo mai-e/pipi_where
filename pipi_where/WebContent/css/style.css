@@ -6,6 +6,7 @@ header img {
 	left:90px;
 	top:20px;
 }
+
 .no1 {
 	width: 450px;
 	border: 1px solid blue;
@@ -17,10 +18,12 @@ header img {
 	border: 1px solid red;
 	float: right;
 }
-button{
+
+button {
 	margin-bottom: 10px;
 
 }
+
 footer {
 	clear: both;
 }

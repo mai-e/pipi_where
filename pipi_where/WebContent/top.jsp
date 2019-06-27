@@ -54,7 +54,7 @@
     	<div class="col s7 m6">
      	<div class="card">
         <div class="card-image">
-          <img src="img/inbag.png">
+          <img src="img/inbag.webp">
           <span class="card-title">身軽に出かけよう</span>
         </div>
         <div class="card-content">
@@ -84,7 +84,7 @@
           <a href="card_list.do">キャッシュレスの方法を選ぶ</a>
         </div>
         <div class="card-image">
-          <img src="img/tokyo.png">
+          <img src="img/tokyo.webp">
         </div>
       </div>
     </div>

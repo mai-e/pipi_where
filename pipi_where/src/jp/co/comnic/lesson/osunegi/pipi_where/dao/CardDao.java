@@ -9,7 +9,8 @@ import java.util.ArrayList;
 
 import javax.naming.NamingException;
 
-import jp.co.comnic.lesson.osunegi.pipi_where.beans.Card;	
+import jp.co.comnic.lesson.osunegi.pipi_where.beans.Card;
+import jp.co.comnic.lesson.osunegi.pipi_where.beans.Store;	
 
 public class CardDao {
 	
@@ -24,7 +25,7 @@ public class CardDao {
 						String name = rs.getString("card_name");
 						String cardName = rs.getString("card_name_wep");
 						double rate = rs.getDouble("rate_max");
-						ArrayList<String> usableStoreList = UsableStoreDao.findBy(name);
+						ArrayList<Store> usableStoreList = UsableStoreDao.findBy(name);
 						String url = rs.getString("url");
 						String charge = rs.getString("charge");
 						cardList.add(new Card(name, cardName, rate, usableStoreList,url, charge));

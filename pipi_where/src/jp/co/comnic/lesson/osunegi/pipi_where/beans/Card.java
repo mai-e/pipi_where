@@ -6,7 +6,7 @@ public class Card {
 	private String name;						// カード名
 	private String cardName;					// カード名ローマ字表記
 	private double rate;						// 還元率
-	private ArrayList<String> usableStoreList;	// 使える店のリスト
+	private ArrayList<Store> usableStoreList;   // 使える店のリスト
 	private String url;
 	private String charge;
 	
@@ -14,7 +14,7 @@ public class Card {
 		
 	}
 	
-	public Card(String name, String cardName, double rate, ArrayList<String> usableStoreList, String url, String charge) {
+	public Card(String name, String cardName, double rate, ArrayList<Store> usableStoreList, String url, String charge) {
 		this.name = name;
 		this.cardName = cardName;
 		this.rate = rate;
@@ -38,15 +38,18 @@ public class Card {
 	public double getRate() {
 		return rate;
 	}
+	public void setUsableStoreList(ArrayList<Store> usableStoreList) {
+		this.usableStoreList = usableStoreList;
+	}
+
+	public ArrayList<Store> getUsableStoreList() {
+		return usableStoreList;
+	}
+
 	public void setRate(double rate) {
 		this.rate = rate;
 	}
-	public ArrayList<String> getUsableStoreList() {
-		return usableStoreList;
-	}
-	public void setUsableStoreList(ArrayList<String> usableStoreList) {
-		this.usableStoreList = usableStoreList;
-	}
+	
 	public String getUrl() {
 		return url;
 	}

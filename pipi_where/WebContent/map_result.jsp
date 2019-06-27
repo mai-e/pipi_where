@@ -66,8 +66,9 @@
 	</span><br>
 		<c:forEach var="list" items="${usableStoreList}">
 			<a href="map_result?name=${list}">
-				<button class="btn waves-effect #80cbc4 teal lighten-3" type="submit">
-						${list}
+				<button class="btn waves-effect #ffffff white grey-text text-darken-4" type="submit">
+				<img src="img/${list.storeName}.webp"  width="25px" height="25px">
+					${list}
 				</button>
 			</a>
 		</c:forEach>

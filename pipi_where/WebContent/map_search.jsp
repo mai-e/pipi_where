@@ -87,12 +87,13 @@
 				</form>
 				<br>
 				<c:forEach var="list" items="${usableStoreList}">
-						<a href="map_result?name=${list}">
-							<button class="btn waves-effect #80cbc4 teal lighten-3" type="submit">
-									${list}
+						<a href="map_result?name=${list.storeJpn}">
+							<button class="btn waves-effect #ffffff white grey-text text-darken-4" type="submit">
+								<img src="img/${list.storeName}.webp"  width="25px" height="30px">
+								${list.storeJpn}
 							</button>
 						</a>
-					</c:forEach>
+				</c:forEach>
 			</div>
 		</div>
 

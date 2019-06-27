@@ -11,6 +11,7 @@ import javax.servlet.http.HttpSession;
 
 import jp.co.comnic.lesson.osunegi.pipi_where.beans.Account;
 import jp.co.comnic.lesson.osunegi.pipi_where.beans.Card;
+import jp.co.comnic.lesson.osunegi.pipi_where.beans.Store;
 
 public class SearchAction implements Action {
 
@@ -31,7 +32,7 @@ public class SearchAction implements Action {
 		forwardPath = "map_search";
 		
 		Account account = (Account) session.getAttribute("account");
-		ArrayList<String> usableStoreList = new ArrayList<String>();
+		ArrayList<Store> usableStoreList = new ArrayList<Store>();
 		for(Card card:account.getCardList()) {
 			if(cardName.equals(card.getName())) {
 				usableStoreList = card.getUsableStoreList();
