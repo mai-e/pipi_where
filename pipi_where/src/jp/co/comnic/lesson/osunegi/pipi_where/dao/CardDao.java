@@ -72,4 +72,40 @@ public class CardDao {
 		    }
 		}
 	}
+	
+	public static void delete(String userName, String[] cardList) throws DaoException {
+		for(String cardName: cardList) {
+		try {
+		      byte[] byteData = cardName.getBytes("ISO_8859_1");
+		      cardName = new String(byteData, "UTF-8");
+		      delete(userName, cardName);
+		    }catch(UnsupportedEncodingException e){
+		      System.out.println(e);
+		    }
+		}
+	}
+	
+	public static int delete(String userName, String cardName) throws DaoException {
+		String sql = "DELETE FROM usable_card WHERE user_name=? AND card_id=?";
+		String cardSql = "SELECT c.card_id from card c where c.card_name = ?";
+		int cardId;
+			try (Connection conn = ConnectionFactory.getConnection();
+				 PreparedStatement pstmt = conn.prepareStatement(cardSql)) {
+				pstmt.setString(1, cardName);
+				try (ResultSet rs = pstmt.executeQuery()) {
+					if (rs.next()) {
+						cardId = rs.getInt("card_id");
+						try(PreparedStatement pstmt2 = conn.prepareStatement(sql)){
+							pstmt2.setString(1,userName);
+							pstmt2.setInt(2, cardId);
+							return pstmt2.executeUpdate();
+						}
+					}
+				}
+				return 0;
+			}catch(NamingException | SQLException e){
+				throw new DaoException(e);
+			}
+				
+		}
 }

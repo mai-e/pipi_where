@@ -43,7 +43,10 @@
 	</div>
 	</div>
 	</header>
-<form action="register.do" method="post">
+	
+	<div class="row">
+	<div class="col s6">
+	<form action="register.do" method="post">
 	<c:forEach var="list" items="${cardList}">
 		<c:forEach var="card" items="${account.cardList}">
 		 <c:if test="${list.name == card.name }">
@@ -52,16 +55,39 @@
    		</c:forEach>
 		 <p>
 	      <label>
-	        <input type="checkbox" class="filled-in" name="checkbox" value="${list.name}" ${checked} />
+	        <input type="checkbox" class="filled-in" name="checkbox1" value="${list.name}" ${checked} />
 	        <span>${list.name}</span>	
        	 	<c:set var="checked" value=""/>		 
 	      </label>
    		 </p>
+   		 
 	</c:forEach>
        	<button class="btn waves-effect #e8eaf6 indigo lighten-5" name="add">
       	<span class="grey-text text-darken-4">カードを登録</span>
       	</button>
 </form>
+</div>
+
+<div class="col s6">
+<form action="delete.do" method="post">
+	<c:forEach var="list" items="${account.cardList}">
+		 <p>
+	      <label>
+	      
+	        <input type="checkbox" class="filled-in" name="checkbox2" value="${list.name}"/>
+	        <span>${list.name}</span>
+       	 	<c:set var="checked" value=""/>		 
+       	 
+	      </label>
+   		 </p>
+   		 
+	</c:forEach>
+      	<button class="btn waves-effect #e8eaf6 indigo lighten-5" name="add">
+      	<span class="grey-text text-darken-4">カードを削除</span>
+      	</button>
+	</form>
+	</div>
+	</div>
 	
 	</div>		
 	</body>

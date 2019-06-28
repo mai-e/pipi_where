@@ -12,18 +12,18 @@ import jp.co.comnic.lesson.osunegi.pipi_where.dao.AccountDao;
 import jp.co.comnic.lesson.osunegi.pipi_where.dao.CardDao;
 import jp.co.comnic.lesson.osunegi.pipi_where.dao.DaoException;
 
-public class RegisterCardAction implements Action{
-
+public class DeleteCardAction implements Action{
+	
 	@Override
 	public Dispatcher execute(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		String[] check = request.getParameterValues("checkbox1");
+		String[] check = request.getParameterValues("checkbox2");
 		HttpSession session = request.getSession();
 		Account account = (Account) session.getAttribute("account");
 		String userName = account.getUserName();
 		try {
-			CardDao.save(userName, check);
+			CardDao.delete(userName, check);
 			account = AccountDao.findBy(account.getUserName(), account.getPassword());
 		} catch (DaoException e) {
 			e.printStackTrace();
