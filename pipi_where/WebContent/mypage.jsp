@@ -68,6 +68,7 @@
 </form>
 </div>
 
+
 <div class="col s6">
 <form action="delete.do" method="post">
 	<c:forEach var="list" items="${account.cardList}">
