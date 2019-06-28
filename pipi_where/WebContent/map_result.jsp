@@ -73,7 +73,6 @@
 			</a>
 		</c:forEach>
 		<div id="map"></div>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCQ28BtGrQbxNXA0FPayZMz89p6k-o_Ow&callback=initMap&libraries=places"></script>
 	</div>
 		<script src="https://maps.googleapis.com/maps/api/js?key=API&callback=initMap&libraries=places"></script>
 	</body>
