@@ -1,6 +1,7 @@
 package jp.co.comnic.lesson.osunegi.pipi_where.controller;
 
 import java.io.IOException;
+import java.time.LocalDateTime;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -22,9 +23,11 @@ public class RegisterCardAction implements Action{
 		HttpSession session = request.getSession();
 		Account account = (Account) session.getAttribute("account");
 		String userName = account.getUserName();
+		LocalDateTime lastLoginTime = account.getLastLoginTime();
 		try {
 			CardDao.save(userName, check);
 			account = AccountDao.findBy(account.getUserName(), account.getPassword());
+			account.setLastLoginTime(lastLoginTime);
 		} catch (DaoException e) {
 			e.printStackTrace();
 		}

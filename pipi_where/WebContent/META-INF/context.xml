@@ -2,7 +2,7 @@
    <Resource name="ds/mariadb/pipi_where" 
              type="javax.sql.DataSource"
              driverClassName="org.mariadb.jdbc.Driver"
-             url="jdbc:mariadb://localhost/pipi_where"
+             url="jdbc:mariadb://13.114.185.17/pipi_where"
              username="root"
              password="mariadb"
    />
